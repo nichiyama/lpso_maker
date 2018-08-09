@@ -1,0 +1,131 @@
+#+OPTIONS: ^:{}
+#+STARTUP: indent nolineimages nofold
+#+TITLE: 格子欠陥について最近の研究から
+#+AUTHOR: 関西学院大学・理工学部・情報科学科　西谷滋人 2017
+#+EMAIL:     (concat "nishitani@kwansei.ac.jp")
+#+LANGUAGE:  jp
+#+OPTIONS:   H:4 toc:t num:2
+
+#+SETUPFILE: /Users/nitch65/org-html-themes/setup/theme-readtheorg-local-daddygongon.setup
+
+* VASPの計算手順
+
+** modeling, 計算モデルの作成
+/Users/bob/materials_science/boundary/modeling
+において
+: modeler make 2 2 2 0
+で
+#+begin_example
+-rw-r--r--@  1 bob  staff  119887  7 27 10:57 view.svg
+-rw-r--r--   1 bob  staff    3754  7 27 10:57 POSCAR_0_2220
+-rw-r--r--   1 bob  staff     216  7 27 10:57 modeler_2220
+#+end_example
+を作成．
+** calc, vaspへの計算投入
+*** 転送
+
+#+begin_example
+> scp POSCAR_0_2220 mini:~/
+POSCAR_0_2220          100% 3754   193.3KB/s   00:00    
+> ssh min
+Last login: Thu Jul 26 10:04:01 2018 from 219.115.158.116
+[macmini:~] bob% scp POSCAR_0_2220 asura0:~/
+POSCAR_0_2220          100% 3754   336.7KB/s   00:00    
+[macmini:~] bob% ssh asura0
+Last login: Thu Jul 26 10:46:09 2018 from mini
+loading .bash_profile
+[bob@asura0 ~]$ ls
+0_1110  0s_fix        90_2213_36   90_4417_188  FixINCAR.txt      submit_code
+0_2220  2015_calc     90_2213_40   90_4440_512  old_files         tmp.tgz
+0_3330  90_10519_636  90_2220_64   90_5519_168  perfect_slab      vasp_potentials
+0_4440  90_1110_8     90_3315_96   90_5519_636  POSCAR_0_2220     vasp_res
+0s      90_2213_32    90_3330_216  Cu           POSCAR_90_1110_8  vasprun
+#+end_example
+
+*** asura0での作業
+まず必要なdirectoryを作成．
+#+begin_example
+  999  mkdir 0_2220_tmp
+ 1000  mv POSCAR_0_2220 0_2220_tmp
+ 1001  cd 0_2220_tmp
+ 1005  cp ../0_2220/KPOINTS .
+ 1005  cp ../0_2220/POTCAR .
+ 1007  cp POSCAR_0_2220 POSCAR
+#+end_example
+
+: vs -i
+でinner_relax dirを作って，そこに必要なファイルをcp.
+#+begin_example
+> ls
+INCAR  KPOINTS  POSCAR  POTCAR  Rakefile
+#+end_example
+
+これ以降は，新たに入れたRakefileを使って作業．
+#+begin_example
+> rake 
+rake clean            # clean up vasp files except continuous calc
+rake cubic            # submit cubic relax on vasp after dir preparation
+rake fix              # fix run from dir_names with INCAR.fix
+rake fix2             # fix2 run from file under 1st with INCAR.fix
+rake gets             # gets the results from DIR
+rake gets_newest      # gets_newest Rakefile from templates
+rake puts_newest      # puts newest Rakefile to vasprun
+rake resubmit_asura6  # resubmit_asura6 QUEUE_NO
+rake submit           # submit vasp after dir preparation add suffix with 1 or 1m etc
+rake submit2          # submit2 vasp with whole_range, add suffix with 1 or 1m etc
+#+end_example
+
+: rake submit
+で，VASPの計算をqueueにsubmit. queueについては，Sun Grid Engineを参照．
+#+begin_example
+ls -1
+INCAR
+inner_relax_0_0
+inner_relax_0_1
+inner_relax_0_-1
+inner_relax_-1_0
+inner_relax_-1_1
+inner_relax_-1_-1
+inner_relax_-2_0
+inner_relax_-2_1
+inner_relax_-2_-1
+KPOINTS
+POSCAR
+POTCAR
+Rakefile
+#+end_example
+inner_relaxに外部のdimensionを変えた量を付け足したdirectoryが
+自動生成されて，その内部の計算データをもとにqueueへsubmit.
+
+queueの様子は
+: vs -j 
+で見ることができる．-jはjobの略．
+
+#+begin_example
+all.q@asura6                   BIP   0/16/20        4.74     linux-x64     
+   5661 0.55500 inner_rela bob          r     07/27/2018 11:27:16     8        
+   5662 0.55500 inner_rela bob          r     07/27/2018 11:27:19     8        
+---------------------------------------------------------------------------------
+all.q@asura7                   BIP   0/16/24        7.14     linux-x64     
+   5663 0.55500 inner_rela bob          r     07/27/2018 11:27:19     8        
+   5664 0.55500 inner_rela bob          r     07/27/2018 11:27:22     8        
+---------------------------------------------------------------------------------
+all.q@asura8                   BIP   0/8/8          2.46     linux-x64     
+   5660 0.55500 inner_rela bob          r     07/27/2018 11:27:16     8        
+#+end_example
+
+計算結果は，
+#+begin_example
+ 1038  cd inner_relax_-2_1
+ 1041  cat inner_relax_-2_1.o5666 
+#+end_example
+で参照．
+
+
+** analysis, 解析
+
+#+begin_example
+ 1047  mkdir finished
+ 1048  mv inner_relax_* finished/
+ 1050  rake gets finished
+#+end_example
