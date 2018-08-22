@@ -1,28 +1,64 @@
-* LPSO
-**  目標，一個計算を投げる
-*** 8/6 
+% Created 2018-08-21 火 22:06
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\author{Taichi Nichiyama}
+\date{\today}
+\title{my\_diary}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.3.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{LPSO}
+\label{sec-1}
+\subsection{目標，一個計算を投げる}
+\label{sec-1-1}
+\subsubsection{8/6}
+\label{sec-1-1-1}
 
 予定を大幅に遅れてwifiが広島の祖父の家についた．
 
-*** 8/7
+\subsubsection{8/7}
+\label{sec-1-1-2}
 
 　ドンキーさんの入力ファイル四つをコピーして，実際に計算をかけてみる．．．
 しかし，エラーが出た.
 
 bashrcのalliasの先がcsl(ドンキーファイル)を参照していた．
-またvasp_submit.rbのコード文もcslのフォルダを参照するようになっていたのでnichiに変更した．
+またvasp$_{\text{submit}}$.rbのコード文もcslのフォルダを参照するようになっていたのでnichiに変更した．
 必要なファイルをcslからコピーした．これが割と時間がかかった．
 実際に1-layerの計算を投げてみた．
 
-*** 8/9 
-   
+\subsubsection{8/9}
+\label{sec-1-1-3}
+
 計算をqsで確認すると終了していた．OUTCARを実際にみる．
 エラーは出ていないよう．
 しかし，何がなんなのかわからないのでマニュアルを参照にしながら理解して行こう．
 もしどうしてもわからないことがあれば，8/15or16にドンキーさんに時間を設けていただいたので直接あってバシバシ質問しよう．
 なので，そこに向けて質問と現状を整理しておかないといけない．
 
-*** ここまでのまとめ
+\subsubsection{ここまでのまとめ}
+\label{sec-1-1-4}
 
 なかなか通信環境が整わなかったので，大幅に取り組む時間が遅れてしまったが，とりあえず目標の一個計算を投げて結果を得ることはできた．
 
@@ -30,3 +66,5 @@ bashrcのalliasの先がcsl(ドンキーファイル)を参照していた．
 
 それらに取り組んで感じた疑問やこれからの流れを今一度まとめて，１５日にドンキーさんに投げかけてみる．
 そして，またそこで得た情報を元に２３日？のゼミで進行状況を先生に報告する．誤っている点等はそこで指摘していただこう．
+% Emacs 25.3.1 (Org mode 8.2.10)
+\end{document}
