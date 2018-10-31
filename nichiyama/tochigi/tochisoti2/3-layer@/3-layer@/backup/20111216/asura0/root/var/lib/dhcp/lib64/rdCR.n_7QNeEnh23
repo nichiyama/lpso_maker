@@ -1,0 +1,10 @@
+hwinfo.hwclasslist = '02000000000000'
+hwinfo.subclass = 7 (0x7)
+hwinfo.baseclass = 257 (0x101)
+hwinfo.active = 'unknown'
+hwinfo.needed = 'no'
+hwinfo.available = 'yes'
+hwinfo.configured = 'no'
+hwinfo.hwclass = 'system'
+hwinfo.model = 'System'
+hwinfo.uniqueid = 'rdCR.n_7QNeEnh23'

@@ -1,0 +1,648 @@
+<!-- Begin header.tpl -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ganglia:: asura Cluster Report</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link type="text/css" href="css/smoothness/jquery-ui-1.10.2.custom.min.css" rel="stylesheet" />
+<link type="text/css" href="css/jquery.liveSearch.css" rel="stylesheet" />
+<link type="text/css" href="css/jquery.multiselect.css" rel="stylesheet" />
+<link type="text/css" href="css/jquery.flot.events.css" rel="stylesheet" />
+<link type="text/css" href="./styles.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>$.uiBackCompat = false;</script>
+<script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.livesearch.min.js"></script>
+<script type="text/javascript" src="js/ganglia.js"></script>
+<script type="text/javascript" src="js/jquery.gangZoom.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="js/combobox.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="js/jquery.buttonsetv.js"></script>
+<script type="text/javascript">
+    var server_utc_offset=32400;
+    var g_refresh_timer = setTimeout("refresh()", 300 * 1000);
+
+    function refreshHeader() {
+      $.get('header.php?date_only=1', function(data) {
+        var title = $("#page_title").text();
+        var l = title.lastIndexOf(" for ");
+        title = title.substring(0, l);
+        title += " for " + data;
+        $("#page_title").text(title);
+        });
+    }
+
+    function refresh() {
+      var selected_tab = $("#selected_tab").val();
+      if (selected_tab == "agg") {
+        refreshAggregateGraph();
+        g_refresh_timer = setTimeout("refresh()", 300 * 1000);
+      } else if (selected_tab == "v") {
+        refreshHeader();
+        if ($.isFunction(window.refreshView)) {
+          refreshView();
+          g_refresh_timer = setTimeout("refresh()", 300 * 1000);
+        } else if ($.isFunction(window.refreshDecomposeGraph)) {
+          refreshDecomposeGraph();
+          g_refresh_timer = setTimeout("refresh()", 300 * 1000);
+        } else
+          ganglia_form.submit();
+      } else if (selected_tab == "ev") {
+        refreshOverlayEvent();
+        g_refresh_timer = setTimeout("refresh()", 300 * 1000);
+      } else if (selected_tab == "m") {
+        if ($.isFunction(window.refreshClusterView)) {
+          refreshHeader();
+          refreshClusterView();
+          g_refresh_timer = setTimeout("refresh()", 300 * 1000);
+        } else if ($.isFunction(window.refreshHostView)) {
+          refreshHeader();
+          refreshHostView();
+          g_refresh_timer = setTimeout("refresh()", 300 * 1000);
+        } else
+          ganglia_form.submit();
+      } else
+        ganglia_form.submit();
+    }
+
+    $(function() {
+      g_overlay_events = ($("#overlay_events").val() == "true");
+
+      g_tabIndex = new Object();
+      g_tabName = [];
+      var tabName = ["m", "s", "v", "agg", "ch", "ev", "rot", "mob"];
+      var j = 0;
+      for (var i in tabName) {
+        if (tabName[i] == "ev" && !g_overlay_events)
+          continue;
+        g_tabIndex[tabName[i]] = j++;
+        g_tabName.push(tabName[i]);
+      }
+
+      // Follow tab's URL instead of loading its content via ajax
+      var tabs = $("#tabs");
+      if (tabs[0]) {
+        tabs.tabs();
+        // Restore previously selected tab
+        var selected_tab = $("#selected_tab").val();
+        //alert("selected_tab = " + selected_tab);
+        if (typeof g_tabIndex[selected_tab] != 'undefined') {
+          try {
+            //alert("Selecting tab: " + selected_tab);
+            tabs.tabs('option', 'active', g_tabIndex[selected_tab]);
+            if (selected_tab == "rot")
+              autoRotationChooser();
+          } catch (err) {
+            try {
+              alert("Error(ganglia.js): Unable to select tab: " + 
+                    selected_tab + ". " + err.getDescription());
+            } catch (err) {
+              // If we can't even show the error, fail silently.
+            }
+          }
+        }
+        tabs.tabs({
+          beforeActivate: 
+          function(event, ui) {
+            var tabIndex = ui.newTab.index();
+            $("#selected_tab").val(g_tabName[tabIndex]);
+            if (g_tabName[tabIndex] != "mob")
+              $.cookie("ganglia-selected-tab-" + window.name, tabIndex);
+            if (tabIndex == g_tabIndex["m"] ||
+              tabIndex == g_tabIndex["v"] ||
+              tabIndex == g_tabIndex["ch"])
+              ganglia_form.submit();
+          }
+        });
+      }
+    });
+
+    $(function() {
+            $("#metrics-picker").combobox();
+      
+
+      
+
+      $(".header_btn").button();
+    });
+
+  $(function () {
+
+    done = function done(startTime, endTime) {
+            setStartAndEnd(startTime, endTime);
+            document.forms['ganglia_form'].submit();
+    }
+
+    cancel = function (startTime, endTime) {
+            setStartAndEnd(startTime, endTime);
+    }
+
+    defaults = {
+        startTime: 1437029484,
+        endTime: 1437033084,
+        done: done,
+        cancel: cancel
+    }
+
+    $(".host_small_zoomable").gangZoom($.extend({
+        paddingLeft: 67,
+        paddingRight: 30,
+        paddingTop: 38,
+        paddingBottom: 25
+    }, defaults));
+
+    $(".host_medium_zoomable").gangZoom($.extend({
+        paddingLeft: 67,
+        paddingRight: 30,
+        paddingTop: 38,
+        paddingBottom: 40
+    }, defaults));
+
+    $(".host_default_zoomable").gangZoom($.extend({
+        paddingLeft: 66,
+        paddingRight: 30,
+        paddingTop: 37,
+        paddingBottom: 50
+    }, defaults));
+
+    $(".host_large_zoomable").gangZoom($.extend({
+        paddingLeft: 66,
+        paddingRight: 29,
+        paddingTop: 37,
+        paddingBottom: 56
+    }, defaults));
+
+    $(".cluster_zoomable").gangZoom($.extend({
+        paddingLeft: 67,
+        paddingRight: 30,
+        paddingTop: 37,
+        paddingBottom: 50
+    }, defaults));
+
+    function rrdDateTimeString(date) {
+      return (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
+    }
+
+    function setStartAndEnd(startTime, endTime) {
+        // we're getting local start/end times.
+
+        // getTimezoneOffset returns negative values east of UTC,
+        // which is the opposite of PHP. we want negative values to the west.
+        var local_offset = new Date().getTimezoneOffset() * 60 * -1;
+        var delta = local_offset - server_utc_offset;
+        var date = new Date((Math.floor(startTime) - delta) * 1000);
+        $("#datepicker-cs").val(rrdDateTimeString(date));
+        date = new Date((Math.floor(endTime) - delta) * 1000);
+        $("#datepicker-ce").val(rrdDateTimeString(date));
+    }
+
+    initShowEvent();
+    initTimeShift();
+  });
+
+
+</script>
+
+</head>
+<body style="background-color: #ffffff;" onunload="g_refresh_timer=null">
+
+
+
+
+<div id="tabs">
+  <div id="tabs-menu", >
+    <ul>
+      <li><a href="#tabs-main">Main</a></li>
+      <li><a href="#tabs-search">Search</a></li>
+      <li><a href="#tabs-main">Views</a></li>
+      <li><a href="aggregate_graphs.php">Aggregate Graphs</a></li>
+      <li><a href="#tabs-main">Compare Hosts</a></li>
+            <li><a href="events.php">Events</a></li>
+      
+      <li><a href="#tabs-autorotation" onclick="autoRotationChooser();">Automatic Rotation</a></li>
+      <li><a href="#tabs-livedashboard" onclick="liveDashboardChooser();">Live Dashboard</a></li>
+      <li><a href="#tabs-mobile" onclick="window.location.href='mobile.php';">Mobile</a></li>
+    </ul>
+  </div>
+
+<div id="tabs-main">
+<form action="./" method="GET" name="ganglia_form">
+  <div style="background-color:#dddddd;padding:5px;">
+     <big style="float:left;"><b id="page_title">asura Cluster Report for Thu, 16 Jul 2015 16:51:24 +0900</b></big><input style="float:right;" class="header_btn" type="submit" value="Get Fresh Data"/><div style="clear:both"></div>
+  </div>
+  <div style="padding:5px 5px 0 5px;">
+    <div style="float:left;" id="range_menu" class="nobr">Last&nbsp;&nbsp;<input OnChange="ganglia_form.submit();" type="radio" id="range-hour" name="r" value="hour" checked="checked"/><label for="range-hour">hour</label><input OnChange="ganglia_form.submit();" type="radio" id="range-2hr" name="r" value="2hr" /><label for="range-2hr">2hr</label><input OnChange="ganglia_form.submit();" type="radio" id="range-4hr" name="r" value="4hr" /><label for="range-4hr">4hr</label><input OnChange="ganglia_form.submit();" type="radio" id="range-day" name="r" value="day" /><label for="range-day">day</label><input OnChange="ganglia_form.submit();" type="radio" id="range-week" name="r" value="week" /><label for="range-week">week</label><input OnChange="ganglia_form.submit();" type="radio" id="range-month" name="r" value="month" /><label for="range-month">month</label><input OnChange="ganglia_form.submit();" type="radio" id="range-year" name="r" value="year" /><label for="range-year">year</label><input OnChange="ganglia_form.submit();" type="radio" id="range-job" name="r" value="job" /><label for="range-job">job</label></div>
+    <div style="float:left;" id="custom_range_menu">or <span class="nobr">from <input type="TEXT" title="Feb 27 2007 00:00, 2/27/2007, 27.2.2007, now -1 week, -2 days, start + 1 hour, etc." NAME="cs" ID="datepicker-cs" SIZE="17"> to <input type="TEXT" title="Feb 27 2007 00:00, 2/27/2007, 27.2.2007, now -1 week, -2 days, start + 1 hour, etc." name="ce" ID="datepicker-ce" SIZE="17"> <input type="submit" value="Go">
+<input type="button" value="Clear" onclick="ganglia_submit(1)"></span>
+</div>
+    <div style="float:right;">&nbsp;&nbsp;<button class="header_btn" onclick="window.location='./?p=2&amp;c=asura';return false;">Physical View</button></div>
+    <div style="clear:both;"></div>
+  </div>
+  <div id="sort_menu" style="padding:5px 5px 0 5px;">
+      Metric&nbsp;&nbsp; <select name="m" id="metrics-picker"><option value="apache_report">apache_report</option><option value="apache_response_report">apache_response_report</option><option value="boottime">boottime</option><option value="bytes_in">bytes_in</option><option value="bytes_out">bytes_out</option><option value="cpu_aidle">cpu_aidle</option><option value="cpu_idle">cpu_idle</option><option value="cpu_nice">cpu_nice</option><option value="cpu_num">cpu_num</option><option value="cpu_report">cpu_report</option><option value="cpu_speed">cpu_speed</option><option value="cpu_steal">cpu_steal</option><option value="cpu_system">cpu_system</option><option value="cpu_user">cpu_user</option><option value="cpu_wio">cpu_wio</option><option value="disk_free">disk_free</option><option value="disk_total">disk_total</option><option value="gexec">gexec</option><option value="gmond_started">gmond_started</option><option value="ip_address">ip_address</option><option value="last_reported">last_reported</option><option value="last_reported_timestamp">last_reported_timestamp</option><option value="load_all_report">load_all_report</option><option value="load_fifteen">load_fifteen</option><option value="load_five">load_five</option><option value="load_one">load_one</option><option value="load_report">load_report</option><option value="location">location</option><option value="machine_type">machine_type</option><option value="mem_buffers">mem_buffers</option><option value="mem_cached">mem_cached</option><option value="mem_free">mem_free</option><option value="mem_report">mem_report</option><option value="mem_shared">mem_shared</option><option value="mem_total">mem_total</option><option value="network_report">network_report</option><option value="nfs_v3_client_report">nfs_v3_client_report</option><option value="os_name">os_name</option><option value="os_release">os_release</option><option value="packet_report">packet_report</option><option value="part_max_used">part_max_used</option><option value="pkts_in">pkts_in</option><option value="pkts_out">pkts_out</option><option value="proc_run">proc_run</option><option value="proc_total">proc_total</option><option value="sample_report">sample_report</option><option value="swap_free">swap_free</option><option value="swap_total">swap_total</option><option value="varnish_report">varnish_report</option></select>&nbsp;&nbsp;
+   
+     Sorted&nbsp;&nbsp;<input OnChange="ganglia_submit();" type="radio" id="radio-ascending" name="s" value="ascending" /><label for="radio-ascending">ascending</label><input OnChange="ganglia_submit();" type="radio" id="radio-descending" name="s" value="descending" /><label for="radio-descending">descending</label><input OnChange="ganglia_submit();" type="radio" id="radio-by_name" name="s" value="by name" checked="checked"/><label for="radio-by_name">by name</label>
+  </div>
+  <div id="sort_menu" style="padding:5px 5px 0 5px;">
+    <b><a href="./?m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2">asura Grid</a></b> <b>&gt;</b>
+<b><a href="./?c=asura&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2">asura</a></b> <b>&gt;</b>
+<input type="hidden" name="c" value="asura">
+<select name="h" OnChange="ganglia_form.submit();"><option value="">--Choose a Node</option><option value="asura0">asura0
+<option value="asura0b">asura0b
+<option value="asura2">asura2
+<option value="asura3">asura3
+<option value="asura4">asura4
+<option value="asura5">asura5
+<option value="asura6">asura6
+<option value="asura7">asura7
+<option value="asura8">asura8
+<option value="asura1a">asura1a
+</select>
+&nbsp;&nbsp;Show only nodes matching <input name=host_regex ><input class="header_btn" type="SUBMIT" VALUE="Filter">&nbsp;<span class="nobr">Max graphs to show <select onChange="ganglia_submit();" name="max_graphs"><option value=0>all</option><option>1000</option><option>500</option><option>200</option><option>100</option><option>50</option><option>25</option><option>20</option><option>15</option><option>10</option></select></span>
+  </div>
+
+
+<input type="hidden" name="tab" id="selected_tab" value="m">
+<input type="hidden" id="vn" name="vn" value="">
+<input type="hidden" id="hide-hf" name="hide-hf" value="false">
+
+<input type="hidden" id="overlay_events" value="true">
+
+<hr size="1" noshade>
+<!-- End header.tpl -->
+<!-- Begin cluster_view.tpl -->
+<script type="text/javascript" src="js/protovis-r3.2.js"></script>
+
+<script type="text/javascript">
+function refreshClusterView() {
+  $.get('cluster_view.php?' + jQuery.param.querystring() + '&refresh', function(data) {
+    var item = data.split("<!-- || -->");
+
+    $('#cluster_title').html(item[1]);
+
+    $('#cluster_overview').html(item[2]);
+
+    if ($('#load_pie').size())
+      $('#load_pie').attr("src", item[3].replace(/&amp;/g, "&"));
+
+    if ($('#heatmap-fig').size()) {
+      eval("heatmap = [" + item[4] + "]")	;
+      vis.render();
+    }
+
+    if ($('#stacked_graph').size()) {
+      var localtimestamp = parseInt(item[0]);
+      var src = $('#stacked_graph').attr('src');
+      $('#stacked_graph').attr("src", jQuery.param.querystring(src, "&st=" + localtimestamp));
+    }
+
+    var host_metric_graphs = $('#host_metric_graphs');
+    host_metric_graphs.css('height', host_metric_graphs.height() + "px");
+    host_metric_graphs.html(item[5]);
+  });
+
+  $("#optional_graphs img").each(function (index) {
+    var src = $(this).attr("src");
+    if ((src.indexOf("graph.php") == 0) ||
+        (src.indexOf("./graph.php") == 0)) {
+      var d = new Date();
+      $(this).attr("src", jQuery.param.querystring(src, "&_=" + d.getTime()));
+    }    
+  });
+}
+
+$(function() {
+  // Modified from http://jqueryui.com/demos/toggle/
+  //run the currently selected effect
+  function runEffect(id){
+    //most effect types need no options passed by default
+    var options = { };
+
+    options = { to: { width: 200,height: 60 } }; 
+    
+    //run the effect
+    $("#"+id+"_div").toggle("blind",options,500);
+  };
+ 
+  //set effect from select menu value
+  $('.button').click(function(event) {
+    runEffect(event.target.id);
+    return false;
+  });
+
+    $(function() {
+        $( "#edit_optional_graphs" ).dialog({ autoOpen: false, minWidth: 550,
+          beforeClose: function(event, ui) {  location.reload(true); } })
+        $( "#edit_optional_graphs_button" ).button();
+        $( "#save_optional_graphs_button" ).button();
+        $( "#close_edit_optional_graphs_link" ).button();
+    });
+
+    $("#edit_optional_graphs_button").click(function(event) {
+      $("#edit_optional_graphs").dialog('open');
+      $('#edit_optional_graphs_content').html('<img src="img/spinner.gif">');
+      $.get('edit_optional_graphs.php', "clustername=asura", function(data) {
+          $('#edit_optional_graphs_content').html(data);
+      })
+      return false;
+    });
+
+    $("#save_optional_graphs_button").click(function(event) {
+       $.get('edit_optional_graphs.php', $("#edit_optional_reports_form").serialize(), function(data) {
+          $('#edit_optional_graphs_content').html(data);
+          $("#save_optional_graphs_button").hide();
+          setTimeout(function() {
+             $('#edit_optional_graphs').dialog('close');
+          }, 5000);
+        });
+      return false;
+    });
+
+});
+</script>
+
+
+
+<style type="text/css">
+  .toggler { width: 500px; height: 200px; }
+  a.button { padding: .15em 1em; text-decoration: none; }
+  #effect { width: 240px; height: 135px; padding: 0.4em; position: relative; }
+  #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+  #heatmap-fig {
+    width: 200px;
+    height: 200px;
+  } 
+</style>
+
+<div id="metric-actions-dialog" title="Metric Actions">
+  <div id="metric-actions-dialog-content">
+    Available Metric actions.
+  </div>
+</div>
+
+<div id="edit_optional_graphs">
+  <div style="text-align:center">
+    <button  id='save_optional_graphs_button'>Save</button>
+  </div>
+  <div id="edit_optional_graphs_content">Empty</div>
+</div>
+
+<div style="background:rgb(238,238,238);text-align:center;">
+  <font size="+1" id="cluster_title">Overview of asura @ 2015-07-16 16:51</font>
+</div>
+
+<table border="0" cellspacing=4 width="100%">
+<tr>
+<td align="left" valign="top">
+<div id="cluster_overview">
+<table cellspacing=1 cellpadding=1 width="100%" border=0>
+ <tr><td>CPUs Total:</td><td align=left><B>102</B></td></tr>
+ <tr><td width="60%">Hosts up:</td><td align=left><B>9</B></td></tr>
+ <tr><td>Hosts down:</td><td align=left><B>1</B></td></tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr><td colspan=2><font class="nobr">Current Load Avg (15, 5, 1m):</font><br>&nbsp;&nbsp;<b>3%, 4%, 3%</b></td></tr>
+ <tr><td colspan=2>Avg Utilization (last hour):<br>&nbsp;&nbsp;<b>1%</b></td></tr>
+ </table>
+
+</div>
+<!-- A place to put custom HTML for the cluster view. -->
+
+
+</td>
+<td rowspan=2 align="center" valign=top>
+<div id="optional_graphs" style="padding-bottom:4px">
+<A HREF="./graph_all_periods.php?c=asura&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2&amp;st=1437033078&amp;g=load_report&amp;z=large">
+    <IMG BORDER=0 style="padding:2px;" class=cluster_zoomable title="asura" SRC="./graph.php?c=asura&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2&amp;st=1437033078&amp;g=load_report&amp;z=medium"></A>
+<A HREF="./graph_all_periods.php?c=asura&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2&amp;st=1437033078&amp;g=mem_report&amp;z=large">
+    <IMG BORDER=0 style="padding:2px;" class=cluster_zoomable title="asura" SRC="./graph.php?c=asura&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2&amp;st=1437033078&amp;g=mem_report&amp;z=medium"></A>
+<A HREF="./graph_all_periods.php?c=asura&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2&amp;st=1437033078&amp;g=cpu_report&amp;z=large">
+    <IMG BORDER=0 style="padding:2px;" class=cluster_zoomable title="asura" SRC="./graph.php?c=asura&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2&amp;st=1437033078&amp;g=cpu_report&amp;z=medium"></A>
+<A HREF="./graph_all_periods.php?c=asura&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2&amp;st=1437033078&amp;g=network_report&amp;z=large">
+    <IMG BORDER=0 style="padding:2px;" class=cluster_zoomable title="asura" SRC="./graph.php?c=asura&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2&amp;st=1437033078&amp;g=network_report&amp;z=medium"></A>
+<br>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+ <td align="center" valign="top">
+
+Utilization heatmap<br />
+<div id="heatmap-fig">
+<script type="text/javascript+protovis">
+var heatmap = [
+[0.0075,0.06125,0.005],[0,0,0.128],[0,0,0]
+];
+
+var w = heatmap[0].length,
+    h = heatmap.length;
+
+var vis = new pv.Panel()
+    .width(w * 66)
+    .height(h * 66)
+    .margin(2)
+    .strokeStyle("#aaa")
+    .lineWidth(4)
+    .antialias(false);
+
+vis.add(pv.Image)
+    .imageWidth(w)
+    .imageHeight(h)
+    .image(pv.Scale.linear()
+        .domain(0, 0.25, 0.5, 0.75, 1.00)
+        .range("#e2ecff", "#caff98", "#ffde5e" , "#ffa15e","#ff634f")
+        .by(function(i, j) heatmap[j][i]));
+
+vis.render();
+    </script>
+ </div>
+
+ </td>
+</tr>
+</table>
+
+
+
+<script type="text/javascript">
+// Need to set the field value to metric name
+$("#metrics-picker").val("cpu_report");
+</script>
+
+
+<div id="cluster_view_chooser">
+<table border="0" width="100%">
+  <tr>
+  <td style="text-align:center;background:rgb(238,238,238);">
+  Show Hosts Scaled:
+    <input type="radio" name="sh" value="2" id="shch2" OnClick="ganglia_form.submit();" ><label for="shch2">Auto</label>
+    <input type="radio" name="sh" value="1" id="shch1" OnClick="ganglia_form.submit();" checked><label for="shch1">Same</label>
+    <input type="radio" name="sh" value="0" id="shch0" OnClick="ganglia_form.submit();" ><label for="shch0">None</label>
+  &nbsp;
+  |
+  <span class="nobr">asura <strong>cpu_report </strong>
+  last <strong>hour</strong>
+  sorted <strong>by name</strong></span>
+  |
+   <font>
+   <span class="nobr">Size&nbsp;&nbsp;<SELECT NAME="z" OnChange="ganglia_form.submit();"><OPTION VALUE="small" SELECTED>small</OPTION>
+<OPTION VALUE="medium">medium</OPTION>
+<OPTION VALUE="large">large</OPTION>
+<OPTION VALUE="xlarge">xlarge</OPTION>
+<OPTION VALUE="xxlarge">xxlarge</OPTION>
+<OPTION VALUE="mobile">mobile</OPTION>
+</SELECT>
+</span>
+   <span class="nobr">Columns&nbsp;&nbsp;<SELECT NAME="hc" OnChange="ganglia_form.submit();">
+<OPTION VALUE=0 >0
+<OPTION VALUE=1 >1
+<OPTION VALUE=2 >2
+<OPTION VALUE=3 >3
+<OPTION VALUE=4 SELECTED>4
+<OPTION VALUE=5 >5
+<OPTION VALUE=6 >6
+<OPTION VALUE=7 >7
+<OPTION VALUE=8 >8
+<OPTION VALUE=9 >9
+<OPTION VALUE=10 >10
+<OPTION VALUE=11 >11
+<OPTION VALUE=12 >12
+<OPTION VALUE=13 >13
+<OPTION VALUE=14 >14
+<OPTION VALUE=15 >15
+<OPTION VALUE=16 >16
+<OPTION VALUE=17 >17
+<OPTION VALUE=18 >18
+<OPTION VALUE=19 >19
+<OPTION VALUE=20 >20
+<OPTION VALUE=21 >21
+<OPTION VALUE=22 >22
+<OPTION VALUE=23 >23
+<OPTION VALUE=24 >24
+<OPTION VALUE=25 >25
+</SELECT>
+ (0 = metric + reports)</span>
+   </font>
+
+  </td>
+</tr>
+</table>
+</div>
+
+<div id="host_metric_graphs">
+<center>
+<table id=graph_sorted_list>
+<tr>
+<td class=down><b><a href="?c=asura&amp;h=asura1a&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2">asura1a</a></b><br><i>cpu_report:</i> <b>down <br>&nbsp;<font size="-2">Last heartbeat 0 days, 1:55:53 ago</font></b></td>
+<td><div><font style='font-size: 8px'>asura0</font><br><a href="?c=asura&amp;h=asura0&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2"><img class=host_small_zoomable src="./graph.php?g=cpu_report&amp;z=small&amp;c=asura&amp;h=asura0&amp;l=e2ecff&amp;v=&amp;r=hour&amp;su=1&amp;st=1437033078" title="asura0" border=0 style="padding:2px;"></a></div></td>
+<td><div><font style='font-size: 8px'>asura0b</font><br><a href="?c=asura&amp;h=asura0b&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2"><img class=host_small_zoomable src="./graph.php?g=cpu_report&amp;z=small&amp;c=asura&amp;h=asura0b&amp;l=e2ecff&amp;v=&amp;r=hour&amp;su=1&amp;st=1437033078" title="asura0b" border=0 style="padding:2px;"></a></div></td>
+<td><div><font style='font-size: 8px'>asura2</font><br><a href="?c=asura&amp;h=asura2&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2"><img class=host_small_zoomable src="./graph.php?g=cpu_report&amp;z=small&amp;c=asura&amp;h=asura2&amp;l=e2ecff&amp;v=&amp;r=hour&amp;su=1&amp;st=1437033078" title="asura2" border=0 style="padding:2px;"></a></div></td></tr><tr>
+<td><div><font style='font-size: 8px'>asura3</font><br><a href="?c=asura&amp;h=asura3&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2"><img class=host_small_zoomable src="./graph.php?g=cpu_report&amp;z=small&amp;c=asura&amp;h=asura3&amp;l=e2ecff&amp;v=&amp;r=hour&amp;su=1&amp;st=1437033078" title="asura3" border=0 style="padding:2px;"></a></div></td>
+<td><div><font style='font-size: 8px'>asura4</font><br><a href="?c=asura&amp;h=asura4&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2"><img class=host_small_zoomable src="./graph.php?g=cpu_report&amp;z=small&amp;c=asura&amp;h=asura4&amp;l=e2ecff&amp;v=&amp;r=hour&amp;su=1&amp;st=1437033078" title="asura4" border=0 style="padding:2px;"></a></div></td>
+<td><div><font style='font-size: 8px'>asura5</font><br><a href="?c=asura&amp;h=asura5&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2"><img class=host_small_zoomable src="./graph.php?g=cpu_report&amp;z=small&amp;c=asura&amp;h=asura5&amp;l=e2ecff&amp;v=&amp;r=hour&amp;su=1&amp;st=1437033078" title="asura5" border=0 style="padding:2px;"></a></div></td>
+<td><div><font style='font-size: 8px'>asura6</font><br><a href="?c=asura&amp;h=asura6&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2"><img class=host_small_zoomable src="./graph.php?g=cpu_report&amp;z=small&amp;c=asura&amp;h=asura6&amp;l=e2ecff&amp;v=&amp;r=hour&amp;su=1&amp;st=1437033078" title="asura6" border=0 style="padding:2px;"></a></div></td></tr><tr>
+<td><div><font style='font-size: 8px'>asura7</font><br><a href="?c=asura&amp;h=asura7&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2"><img class=host_small_zoomable src="./graph.php?g=cpu_report&amp;z=small&amp;c=asura&amp;h=asura7&amp;l=e2ecff&amp;v=&amp;r=hour&amp;su=1&amp;st=1437033078" title="asura7" border=0 style="padding:2px;"></a></div></td>
+<td><div><font style='font-size: 8px'>asura8</font><br><a href="?c=asura&amp;h=asura8&amp;m=cpu_report&amp;r=hour&amp;s=by%20name&amp;hc=4&amp;mc=2"><img class=host_small_zoomable src="./graph.php?g=cpu_report&amp;z=small&amp;c=asura&amp;h=asura8&amp;l=e2ecff&amp;v=&amp;r=hour&amp;su=1&amp;st=1437033078" title="asura8" border=0 style="padding:2px;"></a></div></td>
+
+</tr>
+</table>
+
+
+
+
+
+<p>
+(Nodes colored by 1-minute load) | <a href="./node_legend.html">Legend</A>
+</p>
+
+</center>
+
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $( "#cluster_view_chooser" ).buttonset();
+});
+</script>
+<!-- End cluster_view.tpl -->
+<!-- Begin footer.tpl -->
+</form> <!-- ganglia-form -->
+</div> <!-- tabs-main -->
+
+<div id="tabs-search">
+  Search term matches any number of metrics and hosts. For example type web or disk; wait a split second, and a drop down menu will show up with choices.
+  <!-- Uses LiveSearch from http://andreaslagerkvist.com/jquery/live-search/ -->
+  <div id="metric-search">
+    <form method="post" action="/search/">
+      <p>
+	<label>
+	    <small>Search as you type</small><br />
+	    <input type="text" name="q" id="search-field-q" size="60" placeholder="Search as you type" on />
+	</label>
+      </p>
+    </form>
+  </div>
+</div> 
+
+<div id="create-new-view-dialog" title="Create new view">
+  <div id="create-new-view-layer">
+    <form id="create_view_form">
+      <input type="hidden" name="create_view" value="1">
+      <fieldset>
+	 <label for="name">View Name</label>
+	 <input type="text" name="view_name" id="view_name" class="text ui-widget-content ui-corner-all" />
+         <center><button onclick="createView(); return false;">Create</button></center>
+      </fieldset>
+    </form>
+  </div>
+  <div id="create-new-view-confirmation-layer"></div>
+</div>
+
+<div id="tabs-mobile"></div>
+
+<div id="tabs-autorotation">
+Invoke automatic rotation system. Automatic rotation rotates all of the graphs/metrics specified in a view waiting 
+30 seconds in between each. This will run as long as you have this page open.
+<p>
+Please select the view you want to rotate.</p>
+  <div id="tabs-autorotation-chooser">
+Loading view, please wait...<img src="img/spinner.gif" />
+  </div>
+</div>
+
+<div id="tabs-livedashboard">
+Live dashboard provides you with an overview of all view metrics in a compact format. Data updates every 15 seconds.
+Only those elements that contain a metric or graph report are supported. Aggregate graphs will not be included.
+<p>
+You can get more graphs per page by using your browser zoom functionality.
+<p>
+Please select the view you want to view</p>
+  <div id="tabs-livedashboard-chooser">
+Loading view, please wait...<img src="img/spinner.gif" />
+  </div>
+</div>
+
+
+<div align="center">
+<font size="-1" class="footer" >
+<hr />
+Ganglia Web Frontend version 3.5.10
+<a href="http://ganglia.sourceforge.net/downloads.php?component=ganglia-webfrontend&amp;version=3.5.10">Check for Updates.</a><br />
+
+Ganglia Web Backend <i>(gmetad)</i> version 3.6.0
+<a href="http://ganglia.sourceforge.net/downloads.php?component=gmetad&amp;version=3.6.0">Check for Updates.</a><br />
+
+Downloading and parsing ganglia's XML tree took 0.0142s.<br />
+Images created with <a href="http://www.rrdtool.org/">RRDtool</a> version 1.3.8.<br />
+<a href="http://dwoo.org/">Powered by Dwoo</a> 1.1.1.<br />
+</font>
+</div>
+</div> <!-- div-tabs -->
+</BODY>
+<!-- End footer.tpl -->
+</HTML>
+

@@ -1,0 +1,26 @@
+# Beginning of /var/lib/news/gup/newsfeeds.start.
+# This is used as the start of /var/lib/news/newsfeeds.
+
+ME:*::
+
+# for NOV overview database
+OVERVIEW!:*:Tc,WO:/usr/lib/news/bin/overchan
+
+# sample entry for UUCP
+#hugo/hugo.suse.de:*,!junk,!control*:Tf,Wnb,B4096/1024:
+
+# sample entry for NNTP
+#hugo.suse.de:*,!junk,!control*:Tf,Wnm:hugo.suse.de
+
+uucp!:!*:Tx,Wnb*:/usr/lib/news/bin/buffchan -f 2
+
+nntp!:!*:Tx,Wnm*:/usr/lib/news/bin/buffchan -f 2
+
+# the upstream uucp news server
+#server/server.com\
+#	:*,!junk/!local:Tm:uucp!
+# the upstream nntp news server
+#server/server.com\
+#	:*,!junk/!local:Tm:nntp!
+ 
+# End of /var/lib/news/gup/newsfeeds.start

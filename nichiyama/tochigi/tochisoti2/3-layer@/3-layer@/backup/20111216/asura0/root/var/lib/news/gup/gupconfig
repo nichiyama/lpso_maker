@@ -1,0 +1,25 @@
+#
+# set variables for gup configuration
+# (you should not need to edit this file)
+#
+gupdir=/var/lib/news/gup
+newsdir=/var/lib/news
+newsspool=/var/spool/news
+sitesdir=$gupdir/sites
+sitedir=$sitesdir/$site
+default=$gupdir/default
+defhdr=$default/header
+deftrail=$default/trailer
+defgroup=$default/groups
+defexcl=$default/exclude
+# the username that gup runs as
+gup_uid=news
+
+# gupdate writes a new newsfeeds file $newsfeeds.new is also used
+# as temporary file
+newsfeeds=/var/lib/news/newsfeeds
+mailcmd=/bin/mail
+# error mails go to this person
+news_admin=postmaster
+ctlinnd=/usr/lib/news/bin/ctlinnd
+

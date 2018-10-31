@@ -1,0 +1,6 @@
+[Desktops]
+Number=1
+[Style]
+BorderSize=1
+PluginLib=kwin3_redmond
+

@@ -1,0 +1,3 @@
+/usr/local/vasp	*(rw,async,wdelay,hide,nocrossmnt,secure,no_root_squash,no_all_squash,subtree_check,secure_locks,acl,mapping=identity,anonuid=65534,anongid=65534)
+/usr/intel	*(rw,async,wdelay,hide,nocrossmnt,secure,no_root_squash,no_all_squash,subtree_check,secure_locks,acl,mapping=identity,anonuid=65534,anongid=65534)
+/home	*(rw,async,wdelay,hide,nocrossmnt,secure,no_root_squash,no_all_squash,subtree_check,secure_locks,acl,mapping=identity,anonuid=65534,anongid=65534)

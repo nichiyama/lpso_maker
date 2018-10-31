@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.novell.com/metadata/zypp/xml-store">
+  <name>ja</name>
+  <version ver="" rel=""/>
+  <arch>noarch</arch>
+      <provides><capability kind="language" >ja == </capability>
+</provides>
+
+
+</language>
+

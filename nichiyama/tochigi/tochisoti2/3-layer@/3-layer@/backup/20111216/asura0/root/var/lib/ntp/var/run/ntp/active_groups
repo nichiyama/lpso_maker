@@ -1,0 +1,9 @@
+autofs
+network
+nis
+ntpd
+mail
+lwresd
+printer
+smpppd
+xf86

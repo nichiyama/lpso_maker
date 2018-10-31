@@ -1,0 +1,77 @@
+[$Version]
+update_info=kwin.upd:kde3.2Xinerama,kaccel.upd:kde3.1/r3,klippershortcuts.upd:04112002,kded.upd:kde3.0,socks.upd:kde3.0/r1
+
+[General]
+alternateBackground=240,240,240
+background=238,238,230
+buttonBackground=238,234,222
+linkColor=0,0,192
+selectBackground=74,121,205
+visitedLinkColor=128,0,128
+widgetStyle=windows
+
+[KDE]
+ButtonLayout=1
+AutoSelectDelay=-1
+InsertTearOffHandle=0
+SingleClick=false
+StartDragDist=4
+StartDragTime=500
+VisualActivate=1
+WheelScrollLines=3
+colorScheme=WindowsXP.kcsrc
+ShowIconsOnPushButtons=false
+contrast=7
+
+Activate Window Demanding Attention=none
+Desktop Screenshot=Print
+Enable/Disable Clipboard Actions=none
+Halt without Confirmation=none
+Kill Window=none
+Lock Screen=none
+Logout=none
+Logout without Confirmation=none
+Manually Invoke Action on Current Clipboard=none
+Mouse Emulation=none
+Popup Launch Menu=Ctrl+Escape
+Reboot without Confirmation=none
+Run Command=Win+R
+Show Klipper Popup-Menu=none
+Show Taskmanager=Alt+Ctrl+Delete
+Show Window List=none
+Switch to Desktop 1=Win+F1
+Switch to Desktop 10=Win+F10
+Switch to Desktop 11=none
+Switch to Desktop 12=none
+Switch to Desktop 13=none
+Switch to Desktop 14=none
+Switch to Desktop 15=none
+Switch to Desktop 16=none
+Switch to Desktop 2=Win+F2
+Switch to Desktop 3=Win+F3
+Switch to Desktop 4=Win+F4
+Switch to Desktop 5=Win+F5
+Switch to Desktop 6=Win+F6
+Switch to Desktop 7=Win+F7
+Switch to Desktop 8=Win+F8
+Switch to Desktop 9=Win+F9
+Toggle Showing Desktop=Win+D;Win+M
+Walk Through Desktop List=none
+Walk Through Desktop List (Reverse)=none
+Walk Through Desktops=Win+Tab
+Walk Through Desktops (Reverse)=Win+Shift+Tab
+Window Operations Menu=Alt+Space
+
+[Keyboard]
+Label Ctrl=Strg
+Label Win=Windows
+
+[Shortcuts]
+AddBookmark=Ctrl+D
+Close=Ctrl+F4
+Copy=Ctrl+C
+Cut=Ctrl+X
+Paste=Ctrl+V
+PopupMenuContext=F10
+Quit=Alt+F4
+

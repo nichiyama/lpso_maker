@@ -1,0 +1,26 @@
+[Main Window Settings Toolbar bookmarkToolBar]
+Hidden=true
+IconText=IconTextRight
+Index=3
+
+[Main Window Settings Toolbar extraToolBar]
+Index=0
+
+[Main Window Settings Toolbar locationToolBar]
+Index=2
+
+[Main Window Settings Toolbar mainToolBar]
+Index=1
+
+[Profile]
+FullScreen=false
+Name=filemanagement
+RootItem=View0
+View0_LinkedView=false
+View0_LockedLocation=false
+View0_PassiveMode=false
+View0_ServiceName=konq_iconview
+View0_ServiceType=inode/directory
+View0_ToggleView=false
+View0_URL=file:$HOME
+View0_docContainer=true

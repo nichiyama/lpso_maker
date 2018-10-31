@@ -1,0 +1,25 @@
+We made up two senarios and assessed each step by the first principles calculations. 
+First senario is Stacking Fault initiate. 
+In first senario, we predicted solute atoms are trapped Stacking Fault after introduced periodically them.
+Second senario is Solute Ordering initiate.
+In second senario, we pridicted Stacking Fault traps solute atoms.
+And, solute atoms are sweeped out from Stacking Fault and condense at 4-layer.
+Condensed atoms initiate Stacking faults.
+
+We assesed whether condensed solutions initiate Stacking Faults or not.
+This graph is Stacking Fault energy of Mg 72.
+And, This graph is Stacking Fault energy of Mg 70 Zn 1 Y 1 that Zn and Y replace with Mg at Stacking Fault layer.
+Peek of Mg 70 Zn 1 Y 1 graph is lower than Mg 72 graph.
+So, we guessed impurities like Zn and Y are factors introducing Stacking Faults.
+
+Next, we researched Interaction between cluster and solution.
+The solution is inserted in 1st through 6th layer separating from the cluster or the stacking fault.
+When Zn replace with Mg, total energys don't show critical energy changes.
+But, When Y replacs with Mg, total energys show monotonous decrease.
+The graphs shows Zn is not influenced by cluster and Y is influenced by cluster.
+And Zn-Y pair stable in same layer.
+So, Zn stable a long distance layer from cluster or Stacking Fault.
+
+We inspect cluster stability.
+First, we assesed cluster stability when some clusters exists in same layer.
+As a result, 

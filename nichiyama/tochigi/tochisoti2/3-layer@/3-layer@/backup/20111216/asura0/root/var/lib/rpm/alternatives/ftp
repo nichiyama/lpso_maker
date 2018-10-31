@@ -1,0 +1,12 @@
+auto
+/usr/bin/ftp
+ftp.1
+/usr/share/man/man1/ftp.1.gz
+
+/usr/bin/lftp_wrapper
+5
+/usr/share/man/man1/lftp.1.gz
+/usr/bin/pftp
+10
+/usr/share/man/man1/pftp.1.gz
+

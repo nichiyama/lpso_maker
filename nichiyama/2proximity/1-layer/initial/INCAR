@@ -1,0 +1,65 @@
+# SCF input for VASP# Note that VASP uses the FIRST occurence of a keyword
+ 
+   SYSTEM = Gd unit fixed hcp k-0.5 cut-300 yosuke
+     PREC = Accurate
+    ENCUT = 300
+  #IBRION = -1              #Fix ions
+  #IBRION = 0               #Relax ions with molecular dynamics
+  #IBRION = 1               #Relax ions with quasi-Newton
+   IBRION = 2               #Relax ions with conjugate-gradient
+  #IBRION = 3               #Relax ions with Steepest descent method
+      NSW = 60              #The maximum number of ionic steps
+    #ISIF = 0               #Relax ions
+    #ISIF = 1               #Relax ions, calc stress(trace only)
+    #ISIF = 2               #Relax ions, calc stress
+     ISIF = 3               #Relax ions,shape,volume
+    #ISIF = 4               #Relax ions,shape
+    #ISIF = 5               #Relax shape
+    #ISIF = 6               #Relax shape,volume
+    #ISIF = 7               #Relax volume
+     ALGO = V               #N(Normal):Davidson, F(Fast):Davidson(5 initial steps) & DIIS, V(Very Fast):DIIS
+     NELM = 60              #The maximum number of electronic SC (selfconsistency) steps
+   NELMIN = 12              #The minimum number of electronic SC (selfconsistency) steps
+   NELMDL = -12             #number of non-selfconsistent steps at the beginning
+    EDIFF = 1.0e-05         #Specifies the global break condition for the electronic SC-loop
+   EDIFFG = -0.02           #Defines the break condition for the ionic relaxation loop
+  VOSKOWN = 1               #This usually enhances the magnetic moments and the magnetic energies.
+  #NBLOCK = 1
+    ISPIN = 1
+  #MAGMOM = 23*1 1*7        #Number of atoms x magnetic momet
+ #NUPDOWN = 7               #set this for the first runs(s) only, for the finals run(s) comment this out!!!!
+   INIWAV = 1               #Fill wavefunction arrays with random numbers. Use whenever possible.
+   ISTART = 0               #Don't read WAVCAR file, and set default
+  #ISTART = 1               #Read WAVECAR file
+  #ICHARG = 0               #Don't read CHGCAR file, and set charge density from default wave function
+  #ICHARG = 1               #Read CHGCAR file
+   ICHARG = 2               #Don't read CHGCAR file, and set charge density from super position
+  #ICHARG = 11              #read CHGCAR file, all k-points can be treated independently to write accurate DOS
+  #ICHARG = 12              #No charge update
+    LWAVE = .FALSE.         #Whether wave function written in WAVECAR file or not. TRUE or FALSE
+   LCHARG = .TRUE.          #Whether charge density written in CHGCAR file or not  TRUE or FALSE
+  ADDGRID = .TRUE.
+  #ISMEAR = 1               #For relaxations in metals always use ISMEAR=1 or ISMEAR=2
+  #ISMEAR = -5              #For the calculations of the DOS and very accurate total energy calculations (no relaxation in metals)
+   #SIGMA = 0.01            #Determines the width of the smearing in eV
+    LREAL = Auto            #Projection done in reciprocal space
+   #LREAL = .FALSE.
+   #RWIGS = 1.524 1.482     #The Wigner Seitz radius is optional. Default value is written by POTCAR
+  #NBANDS = 72
+    #EMIN = -10             #Minimum energy for evaluation of DOS
+    #EMAX = 10              #Maximum energy for evaluation of DOS
+   #NEDOS = 901
+    #NPAR = 1               #sqrt(number of nodes)
+    #AMIX = 0.1
+#AMIX_MAG = 0.5
+    #AMIN = 0.1
+ #LMAXMIX = 6
+#AMIX_MAG = 0.2
+    #BMIX = 0.01
+#-----first-----
+    #AMIX = 0.1
+    #BMIX = 0.01
+#----second-----
+    #AMIX = 0.1
+    #AMIN = 0.01
+    #BMIX = 3.0             #increase

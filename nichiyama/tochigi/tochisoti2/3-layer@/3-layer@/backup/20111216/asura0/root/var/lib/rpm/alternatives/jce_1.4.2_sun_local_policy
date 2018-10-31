@@ -1,0 +1,9 @@
+auto
+/usr/lib/jvm/jre-1.4.2-sun/lib/security/local_policy.jar
+jce_1.4.2_sun_us_export_policy
+/usr/lib/jvm/jre-1.4.2-sun/lib/security/US_export_policy.jar
+
+/usr/lib/jvm-private/java-1_4_2-sun/jce/vanilla/local_policy.jar
+1423
+/usr/lib/jvm-private/java-1_4_2-sun/jce/vanilla/US_export_policy.jar
+

@@ -1,0 +1,25 @@
+[General]
+widgetStyle=light, 2nd revision
+
+[KDE]
+EffectAnimateCombo=false
+EffectAnimateMenu=false
+EffectAnimateTooltip=false
+EffectFadeMenu=false
+EffectFadeTooltip=false
+EffectNoTooltip=false
+EffectsEnabled=false
+InsertTearOffHandle=0
+ShowIconsOnPushButtons=false
+
+[KDE Action Restrictions][$i]
+kiosk_exception=
+
+[Locale]
+Country=de
+Language=de:DE
+
+[Toolbar style]
+Highlighting=false
+IconText=IconOnly
+TransparentMoving=false

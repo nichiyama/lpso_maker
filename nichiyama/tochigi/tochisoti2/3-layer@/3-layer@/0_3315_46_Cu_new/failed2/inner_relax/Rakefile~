@@ -1,0 +1,201 @@
+# -*- coding: utf-8 -*-
+require 'systemu'
+require 'fileutils'
+require 'colorize'
+
+# in 4413_5 ,for removing the extra center
+def set_initial_parameters
+  p x_range = [-18, -16, -14]
+  p y_range = [-2]
+  p machines = %w[6 6 7]
+
+  sleep_sec = 3
+  [x_range, y_range, sleep_sec, machines]
+end
+
+desc 'self copy to vasprun'
+task :self_copy do
+  p source = File.join(Dir.pwd, 'Rakefile')
+  p target = '/home/bob/vasprun/lib/templates/Rakefile.inner_relax'
+  FileUtils.cp(source, target, verbose: true)
+end
+
+desc 'clean up vasp files except continuous calc.'
+task :clean do
+  Dir.chdir(File.join(Dir.pwd, ARGV[1]))
+  Dir.entries('.').each do |dir|
+    next unless Dir.exist?(dir)
+    next if ['.', '..'].include?(dir)
+    Dir.chdir(dir) do
+      system('vs -c')
+    end
+  end
+  exit
+end
+
+desc 'gets the results from DIR'
+task :gets do
+  p pwd = Dir.pwd
+  p target_dir = File.join(pwd, ARGV[1])
+  xrange, yrange = grab_range(target_dir)
+  p n_atom = File.readlines('POSCAR')[5].chomp.to_i
+
+  cont = "#i  j  dE  \n"
+  xrange.each do |x_val|
+    yrange.each do |y_val|
+      p work_dir = File.join(target_dir, "inner_relax_#{x_val}_#{y_val}")
+      next unless File.exist?(work_dir)
+      cont << format('%4d %4d ', x_val, y_val)
+      Dir.chdir(work_dir)
+      lat_c = obtain_lat_c_lengths
+      cont << format('%10.5f %10.5f %10.5f ', lat_c[0], lat_c[1], lat_c[2])
+      df, es = calc_df_es(n_atom, lat_c)
+      cont << df.to_s + ' ' + es.to_s + "\n"
+      Dir.chdir(pwd)
+    end
+  end
+  print cont.magenta
+  res_file, head = store_results(pwd, cont)
+  transfer_results(find_min(cont), res_file, head,
+                   '/home/bob/vasp_res')
+end
+
+def grab_range(target_dir)
+  x = []
+  y = []
+  Dir.entries(target_dir).each do |file|
+    p m = file.match(/inner_relax_([-|\d]+)_([-|\d]+)/)
+    next unless m
+    x << m[1]
+    y << m[2]
+  end
+  [x.uniq.sort_by(&:to_i), y.uniq.sort_by(&:to_i)]
+end
+
+def store_results(pwd, cont)
+  head = File.basename(File.dirname(pwd))
+  res_file = ['Res', head].join('_')
+  File.open(res_file, 'w') { |f| f.print cont }
+  [res_file, head]
+end
+
+def find_min(cont)
+  min = [100, 100, 100]
+  cont.split("\n")[1..-1].each do |line|
+    ks = line.split(/\s+/)
+    min = [ks[1].to_i, ks[2].to_i, ks[-1].to_f] if ks[-1].to_f < min[2]
+  end
+  min
+end
+
+def transfer_results(min, res_file, head, res_dir)
+  s_file = File.join('finished',
+                     ['inner_relax', min[0], min[1]].join('_'),
+                     'CONTCAR')
+  t_file = File.join('.',
+                     ['POSCAR', head, 'inner_relax', min[0], min[1]].join('_'))
+  FileUtils.cp(s_file, t_file)
+  FileUtils.mv(t_file, res_dir)
+  FileUtils.mv(res_file, res_dir)
+end
+
+def calc_df_es(n_atom, lat_c)
+  df = grab_df
+  de = df - n_atom * -3.739501247
+  ss = lat_c[1] * lat_c[2]
+  es = de / ss * 1.60218 * 10 / 2
+  [df, es]
+end
+
+def grab_df
+  _status, stdout, = systemu("tail inner_*.o* |grep 'F='")
+  stdout.scan(/F=(.+) E0/)[0][0].to_f
+end
+
+def obtain_lat_c_lengths
+  _status, stdout, = systemu('head POSCAR')
+  lines = stdout.split("\n")
+  lat_c = [0, 1, 2].inject([]) do |res, i|
+    res << lines[i + 2].split(' ')[i].to_f
+  end
+  lat_c
+end
+
+desc 'submit the input files in the dirs after preparation'
+task :submit do
+  x_range, y_range, sleep_sec, machines = set_initial_parameters
+  p file = ARGV[1] || 'POSCAR'
+  #  p opts = {:realrun=>false, :vs=>false} #first step
+  # p opts = {:realrun=>true, :vs=>false} #second step
+  p opts = { realrun: true, vs: true } # last
+
+  iter = 0
+  y_range.each do |y_val|
+    x_range.each do |x_val|
+      dir = "inner_relax_#{x_val}_#{y_val}"
+      lines = rewrite_xy_in_lines(File.readlines(file), x_val, y_val, dir)
+
+      mkdir_unless_exists(dir)
+
+      next unless opts[:realrun] == true
+      write_modified_poscar(lines, dir)
+      copy_other_cars(dir)
+
+      next unless opts[:vs] == true
+      core_num = 8
+      vasp_submit_from_vs_input(dir, machines[iter], core_num)
+      iter += 1
+      sleep(sleep_sec)
+    end
+  end
+  exit
+end
+
+def vasp_submit_from_vs_input(dir, asura, core_num)
+  Dir.chdir(dir)
+  File.open('vs_input.txt', 'w') do |f|
+    f.print "#{core_num}\n#{dir}\n#{asura}"
+  end
+  system('cat vs_input.txt|vs --submit')
+  Dir.chdir('..')
+end
+
+def write_modified_poscar(lines, dir)
+  File.open(File.join(dir, 'POSCAR'), 'w') do |file|
+    lines.each { |line| file.print(line) }
+  end
+end
+
+def copy_other_cars(dir)
+  %w[POTCAR INCAR KPOINTS].each do |file|
+    FileUtils.cp(file, dir, verbose: true)
+  end
+end
+
+RE_GET_VAL = Regexp.new(/\s+([-\d.]+)\s+([-\d.]+)/)
+
+def rewrite_xy_in_lines(lines, x_val, y_val, dir)
+  lines = rewrite_xy(lines, x_val, y_val)
+  head_op = "#{dir} for #{file} calc. xx=#{x_val} and yy=#{y_val}\n"
+  lines[0] = lines[0].chomp + head_op
+  lines
+end
+
+def rewrite_xy(lines, x_val, y_val)
+  vals = [x_val, y_val]
+  [1, 2].each do |i|
+    line = lines[i + 1]
+    v0 = line.match(RE_GET_VAL)[i]
+    v1 = v0.to_f * (1.0 + vals[i - 1] / 100.0)
+    line.sub!(v0, v1.to_s)
+  end
+  lines
+end
+
+def mkdir_unless_exists(dir)
+  if File.exist?(dir)
+    print "#{dir} exists.  Check it.\n".red
+  else
+    Dir.mkdir(dir)
+  end
+end

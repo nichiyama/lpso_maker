@@ -1,0 +1,27 @@
+#! /bin/sh
+
+file=$1
+shift
+mime=$1
+shift
+
+if test "$#" -gt 0; then
+  orig=${1/file:\//}
+  shift
+fi
+
+case "$orig" in
+  help:/*)
+	orig=${orig/help:\//}
+	orig=${orig//index.docbook/}
+	cd /opt/kde3/share/doc/HTML/en/$orig
+	file=index.docbook
+	;;
+  *)	
+	file=$orig
+	cd `dirname $orig`
+	;;
+esac
+
+echo "t	apptitle"
+/opt/kde3/bin/meinproc --htdig "$file"

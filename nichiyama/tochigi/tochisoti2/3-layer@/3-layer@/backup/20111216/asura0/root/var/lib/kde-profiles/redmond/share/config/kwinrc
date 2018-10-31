@@ -1,0 +1,10 @@
+[Style]
+BorderSize=1
+ButtonsOnLeft=MS
+ButtonsOnRight=HIAX
+CustomButtonPositions=false
+PluginLib=kwin3_plastik
+ShowToolTips=true
+
+[Windows]
+TitlebarDoubleClickCommand=Maximize

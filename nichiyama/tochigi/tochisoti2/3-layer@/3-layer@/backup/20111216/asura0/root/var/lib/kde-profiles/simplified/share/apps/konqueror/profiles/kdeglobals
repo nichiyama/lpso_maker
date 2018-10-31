@@ -1,0 +1,21 @@
+[KDE Action Restrictions]
+action/editfiletype=false
+action/file_open_recent=false
+action/help_about_app=false
+action/help_about_kde=false
+action/menuedit=false
+action/openintab=false
+lineedit_text_completion=false
+movable_toolbars=false
+run_command=false
+shell_access=false
+start_new_session=false
+user/root=false
+
+[Locale]
+Country=de
+Language=de:DE
+
+[KDE]
+ShowIconsOnPushButtons=false
+
