@@ -1,0 +1,9 @@
+auto
+/usr/lib/jvm/jre-sun
+jre_sun_exports
+/usr/lib/jvm-exports/jre-sun
+
+/usr/lib/jvm/jre-1.4.2-sun
+1423
+/usr/lib/jvm-exports/jre-1.4.2-sun
+

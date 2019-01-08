@@ -1,0 +1,19 @@
+# SCF input for VASP
+# Note that VASP uses the FIRST occurence of a keyword
+SYSTEM = Ti-bcc (VASP)
+
+    PREC = Medium
+    NELM = 50
+  NELMIN = 2
+   EDIFF = 1.0e-05
+   ISPIN = 1
+  ICHARG = 12
+   NEDOS = 600
+   LWAVE = .FALSE.
+  LCHARG = .TRUE.
+  ISMEAR = 0
+   SIGMA = 0.1
+   IALGO = 48
+   LREAL = .FALSE.
+
+

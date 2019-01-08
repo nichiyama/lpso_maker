@@ -1,0 +1,356 @@
+#!/bin/sh
+#
+# test-hpl Ver. 1.00, (c) 2005 Visual Technology, Inc., Tokyo, Japan
+#
+# MINEFFIC: Allowable minimum efficiency of HPL performance. 
+#
+MINEFFIC="0.65"
+#
+# MINLOAD: Allowable minimum CPU load(%) of each HPL process.
+#
+MINLOAD="70"
+#
+# PASSES: Number of test passes.
+#
+PASSES="4"
+#
+# Definition of OMP_NUM_THREADS is needed by Intel MKL.
+#
+export OMP_NUM_THREADS=1
+export LANG=C
+#
+NCPU="`fgrep processor /proc/cpuinfo | wc -l`"
+MAXMEM=""
+#
+case "$1" in
+    -a)
+	;;
+    -q)
+	MAXMEM=`echo "1000000*${NCPU}" | bc`;
+	;;
+    -l)
+	PASSES="9999"
+	;;
+    *)
+	echo "Usage: $0 [option]"
+	echo "  options"
+	echo "     -a : Full test (Test almost the whole memory.)"
+	echo "     -q : Quick test (Test up to 1GB of memories/CPU.)"
+	echo "     -l : Loop execution of full test (Run eternally.)"
+	exit
+	;;
+esac
+#
+NUMA="false"
+if [ "`arch`" = "x86_64" ]; then
+    if [ -x /usr/bin/numactl ]; then
+	NUMANODES="`numactl --hardware | awk 'NR==1{print $2}'`";
+    else
+	NUMANODES="1";
+    fi
+    if [ "${NUMANODES}" -ge "2" ]; then
+	echo
+	echo "NuMA functions are available. Node informations are as follows;"
+	numactl --hardware
+	echo
+	ANS=""
+	while [ -z "${ANS}" ];
+	  do
+	  echo -n "Do you want to use numactl for testing (y/n)? [y] "
+	  read ANS
+	  if [ -z "${ANS}" ]; then
+	      ANS="y";
+	  fi
+	  if [ "${ANS}" = "y" -o "${ANS}" = "Y" ]; then
+	      if [ "${NUMANODES}" -eq "${NCPU}" ]; then
+		  echo
+		  echo "This system seemed to be using single core processors."
+		  echo "Using numactl with single core policy."
+		  DUALCORE="false";
+	      elif [ `echo "${NUMANODES}*2" | bc` -eq "${NCPU}" ]; then
+		  echo
+		  echo "This system seemed to be using dual core processors."
+		  echo "Using numactl with dual core policy."
+		  DUALCORE="true";
+	      else
+		  echo "Error: Irregular memory pattern."
+		  exit 1;
+	      fi
+# Data size is limited below (minimum_node_memory_size*number_of_nodes).
+	      MMEM="`numactl --hardware | grep size: | sort +3n | \
+		awk 'NR==1{print $4*1000*NODES}' NODES=${NUMANODES}`"
+	      if [ -z "${MAXMEM}" ]; then
+		  MAXMEM="${MMEM}";
+	      else
+		  if [ "${MMEM}" -lt "${MAXMEM}" ]; then
+		      MAXMEM="${MMEM}";
+		  fi;
+	      fi
+	      NUMA="true";
+	  elif [ "${ANS}" = "n" -o "${ANS}" = "N" ]; then
+	      NUMA="false";
+	  else
+	      echo "Please answer \"y\" or \"n\".";
+	  fi;
+	done;
+    fi;
+else
+# Data size is limited below 2GB*Ncpu for 32bit OS.
+    MAXMEM=`echo "1950000"*${NCPU} | bc`;
+fi
+#
+MEMTOTAL="`awk '$1=="MemTotal:"{print $2}' /proc/meminfo`"
+if [ -n "${MAXMEM}" ]; then
+    if [ "${MAXMEM}" -lt "${MEMTOTAL}" ]; then
+	MEMTOTAL="${MAXMEM}";
+    fi;
+fi
+#
+# MEMOS: Amount of memories for system processes (kB).
+#
+MEMOS="200000"
+#
+# Amount of memories for HPL = (${MEMTOTAL}-${MEMOS})*${MGN}
+#
+MGN="0.95"
+#
+# NS: Size of matrix for HPL calculation.
+#
+NS="`echo "sqrt((${MEMTOTAL}-${MEMOS})*125*${MGN}/${NCPU})" | bc`"
+#
+./gendat.sh ${NS}
+#
+CPUS="`awk '$1=="processor"{printf(" %d",$3)}' /proc/cpuinfo`"
+#
+MHZ="`awk '$2=="MHz"{printf("%f\n",$4)}' /proc/cpuinfo | head -n 1`"
+#
+MINGF="`echo ${MHZ}*${MINEFFIC}*0.002 | bc`"
+#
+trap "killall xhpl >/dev/null 2>&1" 0
+#
+if [ "`arch`" = "x86_64" ]; then
+    if [ -n "`fgrep AuthenticAMD /proc/cpuinfo`" ]; then
+	ln -fs xhpl-opt-64 bin/xhpl;
+    else
+	ln -fs xhpl-p4-64 bin/xhpl;
+    fi;
+else
+    if [ -n "`fgrep AuthenticAMD /proc/cpuinfo`" ]; then
+	ln -fs xhpl-opt-32 bin/xhpl;
+    else
+	ln -fs xhpl-p4-32 bin/xhpl;
+    fi;
+fi
+#
+#
+EXIT="false"
+WARNING="false"
+#
+rm -rf [0-7]
+for i in ${CPUS};
+  do
+  mkdir -p ${i}
+  echo "99" > ${i}/load
+  ln -sf ../HPL.dat ${i}/HPL.dat
+  ln -sf ../bin/xhpl ${i}/xhpl
+  rm -f ${i}/HPL.out ${i}/HPL.out.0 ${i}/checked;
+done
+#
+PASS="1"
+while [ "${PASS}" -le "${PASSES}" ];
+  do
+  sync
+  for i in ${CPUS};
+    do
+    if ${NUMA}; then
+	if ${DUALCORE}; then
+	    NODE="`echo "${i}/2" | bc`";
+	else
+	    NODE="${i}";
+	fi
+	numactl -c ${NODE} -m ${NODE} ./exechpl.sh ${i} > /dev/null 2>&1 &
+    else
+	./exechpl.sh ${i} > /dev/null 2>&1 &
+    fi;
+  done
+#
+  echo
+  echo "Pass ${PASS} started."
+  date
+#
+  sync
+  sleep 10
+  for i in ${CPUS};
+    do
+    EPID="`cat ${i}/ppid`"
+    ps -lyC xhpl | awk '$4==EPID{print $3}' EPID=${EPID} > ${i}/pid
+  done
+  sync
+  sleep 10
+#  
+  RUNNING="true"
+  WARNINGP="false"
+  while ${RUNNING};
+    do
+    TOP=`top -bn1 | grep xhpl | grep -v grep`
+    sync
+    sleep 20
+    RUNNING="false"
+    for i in ${CPUS};
+      do
+      if ${NUMA}; then
+	  if ${DUALCORE}; then
+	      NODE="`echo "${i}/2" | bc`";
+	  else
+	      NODE="${i}";
+	  fi;
+      fi
+      STATUS="`cat ${i}/status`"
+      PID="`cat ${i}/pid`"
+      case "${STATUS}" in
+	  running)
+	      PSS=`echo "${TOP}" |awk '$1==PID{print $8}' PID=${PID}`
+	      PSC=`echo "${TOP}" |awk '$1==PID{printf("%d\n", $9)}' PID=${PID}`
+	      if [ -z "${PID}" -o -z "${PSS}" ]; then
+		  if ${NUMA}; then
+		      echo "Error: Process ${i} on node ${NODE} is not running.";
+		  else
+		      echo "Error: Process ${i} is not running.";
+		  fi
+		  EXIT="true";
+	      else
+		  if [ "${PSS}" = "Z" ]; then
+		      if ${NUMA}; then
+			  echo "Error: Process ${i} on node ${NODE} (PID=${PID}) is a zombie.";
+		      else
+			  echo "Error: Process ${i} (PID=${PID}) is a zombie.";
+		      fi
+		      EXIT="true";
+		  elif [ "${PSC}" -lt "${MINLOAD}" \
+		      -a "`cat ${i}/load`" -lt "${MINLOAD}" ]; then
+		      if ${NUMA}; then
+			  echo "Warning: CPU load of process ${i} on node ${NODE} (${PSC}%) is too small.";
+		      else
+			  echo "Warning: CPU load of process ${i} (${PSC}%) is too small.";
+		      fi
+		      RUNNING="true"
+		      WARNINGP="true";
+		  else
+		      RUNNING="true"
+		      echo ${PSC} > ${i}/load;
+		  fi;
+	      fi
+	      ;;
+	  failed)
+	      if ${NUMA}; then
+		  echo "Error: Process ${i} on node ${NODE} exited with error status.";
+	      else
+		  echo "Error: Process ${i} exited with error status.";
+	      fi
+	      EXIT="true"
+	      ;;
+	  completed)
+	      if [ ! -f "${i}/checked" ]; then
+		  if ${NUMA}; then
+		      echo "  Process ${i} on node ${NODE} was completed.";
+		  else
+		      echo "  Process ${i} was completed.";
+		  fi
+		  touch ${i}/checked;
+	      fi
+	      ;;
+	  *)
+	      sync
+	      sleep 10
+	      STATUS="`cat ${i}/status`"
+	      if [ "${STATUS}" = "failed" -o "${STATUS}" = "completed" ]; then
+		  RUNNING="true";
+	      else
+		  echo "Error: Unknown status: This can't happen."
+		  EXIT="true";
+	      fi
+	      ;;
+      esac;
+    done
+    if ${EXIT}; then
+	echo
+	echo "Test failed. Please check the system."
+	exit 1;
+    fi;
+  done
+  sync
+  sleep 10
+  for i in ${CPUS};
+    do
+    echo
+    if ${NUMA}; then
+	if ${DUALCORE}; then
+	    NODE="`echo "${i}/2" | bc`";
+	else
+	    NODE="${i}";
+	fi
+	echo "  Result of the test on process ${i} on node ${NODE} is as follows.";
+    else
+	echo "  Result of the test on process ${i} is as follows.";
+    fi
+    if [ -s "${i}/HPL.out" ]; then
+	if [ "`fgrep '1 tests completed and passed' ${i}/HPL.out`" ]; then
+	    echo "    Test completed and passed residual checks."
+	    awk '/W11R2C4/{printf("    Performance = %f GFLOPS\n",$7)}'\
+		${i}/HPL.out;
+	    if [ "`awk '/W11R2C4/{if($7<MINGF) print "slow"}'\
+		  MINGF=${MINGF} ${i}/HPL.out`" ]; then
+		echo "Error: Performance is too low."
+		EXIT="true";
+	    fi;
+	elif [ "`fgrep '1 tests completed and failed' ${i}/HPL.out`" ]; then
+	    echo "Error: Residual checks were failed as follows."
+	    tail -18 ${i}/HPL.out | head -3
+	    EXIT="true";
+	else
+	    echo "Error: Test does not completed."
+	    EXIT="true";
+	fi
+	if [ "${PASS}" -ge 2 ]; then
+	    DIFF=`diff ${i}/HPL.out.0 ${i}/HPL.out | fgrep "......" `
+	    if [ -n "${DIFF}" ]; then
+		echo "Error: Inconsistency in results as follows."
+		echo "${DIFF}"
+		EXIT="true";
+	    fi;
+	fi
+	mv ${i}/HPL.out ${i}/HPL.out.0;
+    else
+	echo "Error: No output file."
+	EXIT="true";
+    fi;
+  done
+#  if [ "`echo ${CPUS} | wc -w`" -ne 1 ]; then
+#      if [ `fgrep -h "......" [0-7]/HPL.out.0|sort|uniq|wc -l` -ne "3" ]; then
+#	  echo
+#	  echo "Error: Difference between results from other processes."
+#	  fgrep -H "......" [0-7]/HPL.out.0
+#	  EXIT="true";
+#      fi;
+#  fi
+  if ${EXIT}; then
+      echo
+      echo "Test failed. Please check the system."
+      exit 1;
+  else
+      echo
+      if ${WARNINGP}; then
+	  echo "Pass ${PASS} was completed with warnings."
+	  WARNING="true";
+      else
+	  echo "Pass ${PASS} was succesfully completed.";
+      fi;
+  fi
+  let PASS=PASS+1;
+done
+echo
+if ${WARNING}; then
+    echo "Tests were completed with warnings."
+else
+    echo "All tests were succesfully completed."
+fi

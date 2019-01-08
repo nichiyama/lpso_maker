@@ -1,0 +1,44 @@
+#+TITLE:     12/13 進行状況
+#+AUTHOR:    Nichiyama
+#+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
+#+DATE:      2018-10-11
+#+LANGUAGE:  en
+#+OPTIONS: ^:{}  H:4 num:nil toc:2
+
+#+SETUPFILE: /Users/nitch65/org-html-themes/setup/theme-readtheorg-local-daddygongon.setup
+
+#+begin_html
+<div class="right">
+  <a href="https://github.com/fniessen/org-html-themes/blob/master/demo/example.org" class="fa fa-github"> Edit on GitHub</a>
+</div>
+#+end_html
+
+-----
+
+* 取り組む課題
+  -donkeyさんのsmall clusterのグラフ表示
+
+  -栃木さんのfix再計算
+
+  -gnuplotで描く
+
+* 12/12までに取り組んだこと
+
+** ドンキーさんの結果を同時にグラフに表示
+   -栃木さんの第３近接，僕の第2近接，ドンキーさんのsmall clusterの結果を
+   同時に表示するグラフにしました．
+
+#+BEGIN_EXAMPLE
+
+#+ATTR_HTML: alt="TODO状態遷移" width="50%"
+   [[file:2_3_cluster.png]]
+
+#+END_EXAMPLE
+
+** 栃木さんの計算
+   -１近接の計算を再度１から掛け直し中です．
+   おそらく今週中には終わり，3近接も同様にかけます.
+
+** グラフ生成の自動化
+   -いつもグラフはgnuplotで手動で作っていたのですが，面倒なので何か自動化
+   のプログラムはないかと中野に聞いたり，大崎研のxdoplotを使ってみたり，

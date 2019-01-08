@@ -1,0 +1,1112 @@
+I [31/Aug/2007:10:58:10 +0900] Listening to 0:631
+I [31/Aug/2007:10:58:10 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [31/Aug/2007:10:58:11 +0900] Configured for up to 100 clients.
+I [31/Aug/2007:10:58:11 +0900] Allowing up to 100 client connections per host.
+I [31/Aug/2007:10:58:11 +0900] Full reload is required.
+I [31/Aug/2007:10:58:18 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 2804 PPDs...
+I [31/Aug/2007:10:59:35 +0900] LoadPPDs: Wrote "/etc/cups/ppds.dat", 4274 PPDs...
+I [31/Aug/2007:10:59:35 +0900] Full reload complete.
+E [31/Aug/2007:10:59:35 +0900] StartListening: Unable to find IP address for server name "linux" - Unknown host
+I [31/Aug/2007:10:59:56 +0900] Added remote printer "canon1"...
+I [31/Aug/2007:11:00:01 +0900] Scheduler shutting down normally.
+I [31/Aug/2007:11:02:23 +0900] Listening to 0:631
+I [31/Aug/2007:11:02:23 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [31/Aug/2007:11:02:23 +0900] Configured for up to 100 clients.
+I [31/Aug/2007:11:02:23 +0900] Allowing up to 100 client connections per host.
+I [31/Aug/2007:11:02:23 +0900] Full reload is required.
+I [31/Aug/2007:11:02:31 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [31/Aug/2007:11:02:32 +0900] LoadPPDs: No new or changed PPDs...
+I [31/Aug/2007:11:02:32 +0900] Full reload complete.
+E [31/Aug/2007:11:02:32 +0900] StartListening: Unable to find IP address for server name "(none)" - Unknown host
+I [31/Aug/2007:11:03:02 +0900] Added remote printer "canon1"...
+I [31/Aug/2007:11:30:17 +0900] Remote destination "canon1" has timed out; deleting it...
+I [31/Aug/2007:11:46:27 +0900] Added remote printer "canon1"...
+I [31/Aug/2007:12:34:02 +0900] Scheduler shutting down normally.
+I [31/Aug/2007:12:36:22 +0900] Listening to 0:631
+I [31/Aug/2007:12:36:23 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [31/Aug/2007:12:36:24 +0900] Configured for up to 100 clients.
+I [31/Aug/2007:12:36:24 +0900] Allowing up to 100 client connections per host.
+I [31/Aug/2007:12:36:24 +0900] Full reload is required.
+I [31/Aug/2007:12:36:35 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [31/Aug/2007:12:36:45 +0900] LoadPPDs: No new or changed PPDs...
+I [31/Aug/2007:12:36:45 +0900] Full reload complete.
+I [31/Aug/2007:13:52:32 +0900] Added remote printer "canon1"...
+I [31/Aug/2007:14:31:39 +0900] Scheduler shutting down normally.
+I [31/Aug/2007:14:34:25 +0900] Listening to 0:631
+I [31/Aug/2007:14:34:25 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [31/Aug/2007:14:34:26 +0900] Configured for up to 100 clients.
+I [31/Aug/2007:14:34:26 +0900] Allowing up to 100 client connections per host.
+I [31/Aug/2007:14:34:26 +0900] Full reload is required.
+I [31/Aug/2007:14:34:36 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [31/Aug/2007:14:34:37 +0900] LoadPPDs: No new or changed PPDs...
+I [31/Aug/2007:14:34:37 +0900] Full reload complete.
+I [31/Aug/2007:15:57:37 +0900] Scheduler shutting down normally.
+I [31/Aug/2007:16:00:51 +0900] Listening to 0:631
+I [31/Aug/2007:16:00:52 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [31/Aug/2007:16:00:54 +0900] Configured for up to 100 clients.
+I [31/Aug/2007:16:00:54 +0900] Allowing up to 100 client connections per host.
+I [31/Aug/2007:16:00:54 +0900] Full reload is required.
+I [31/Aug/2007:16:01:14 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [31/Aug/2007:16:01:18 +0900] LoadPPDs: No new or changed PPDs...
+I [31/Aug/2007:16:01:18 +0900] Full reload complete.
+I [31/Aug/2007:16:09:35 +0900] Scheduler shutting down normally.
+I [31/Aug/2007:17:20:37 +0900] Listening to 0:631
+I [31/Aug/2007:17:20:38 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [31/Aug/2007:17:20:39 +0900] Configured for up to 100 clients.
+I [31/Aug/2007:17:20:39 +0900] Allowing up to 100 client connections per host.
+I [31/Aug/2007:17:20:39 +0900] Full reload is required.
+I [31/Aug/2007:17:20:52 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [31/Aug/2007:17:21:15 +0900] LoadPPDs: No new or changed PPDs...
+I [31/Aug/2007:17:21:15 +0900] Full reload complete.
+I [31/Aug/2007:17:34:42 +0900] Added remote printer "canon1"...
+I [02/Sep/2007:09:16:11 +0900] Listening to 0:631
+I [02/Sep/2007:09:16:11 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [02/Sep/2007:09:16:12 +0900] Configured for up to 100 clients.
+I [02/Sep/2007:09:16:12 +0900] Allowing up to 100 client connections per host.
+I [02/Sep/2007:09:16:12 +0900] Full reload is required.
+I [02/Sep/2007:09:16:15 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [02/Sep/2007:09:16:16 +0900] LoadPPDs: No new or changed PPDs...
+I [02/Sep/2007:09:16:16 +0900] Full reload complete.
+I [02/Sep/2007:09:16:49 +0900] Scheduler shutting down normally.
+I [03/Sep/2007:14:34:10 +0900] Listening to 0:631
+I [03/Sep/2007:14:34:12 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [03/Sep/2007:14:34:13 +0900] Configured for up to 100 clients.
+I [03/Sep/2007:14:34:13 +0900] Allowing up to 100 client connections per host.
+I [03/Sep/2007:14:34:13 +0900] Full reload is required.
+I [03/Sep/2007:14:34:14 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [03/Sep/2007:14:34:15 +0900] LoadPPDs: No new or changed PPDs...
+I [03/Sep/2007:14:34:15 +0900] Full reload complete.
+I [03/Sep/2007:14:39:42 +0900] Added remote printer "canon1"...
+I [03/Sep/2007:14:47:20 +0900] Scheduler shutting down normally.
+I [03/Sep/2007:16:39:53 +0900] Listening to 0:631
+I [03/Sep/2007:16:39:53 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [03/Sep/2007:16:39:54 +0900] Configured for up to 100 clients.
+I [03/Sep/2007:16:39:54 +0900] Allowing up to 100 client connections per host.
+I [03/Sep/2007:16:39:54 +0900] Full reload is required.
+I [03/Sep/2007:16:39:57 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [03/Sep/2007:16:39:58 +0900] LoadPPDs: No new or changed PPDs...
+I [03/Sep/2007:16:39:58 +0900] Full reload complete.
+I [03/Sep/2007:16:41:31 +0900] Scheduler shutting down normally.
+I [04/Sep/2007:12:15:57 +0900] Listening to 0:631
+I [04/Sep/2007:12:15:59 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [04/Sep/2007:12:16:00 +0900] Configured for up to 100 clients.
+I [04/Sep/2007:12:16:00 +0900] Allowing up to 100 client connections per host.
+I [04/Sep/2007:12:16:00 +0900] Full reload is required.
+I [04/Sep/2007:12:16:01 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [04/Sep/2007:12:16:01 +0900] LoadPPDs: No new or changed PPDs...
+I [04/Sep/2007:12:16:01 +0900] Full reload complete.
+I [04/Sep/2007:13:02:20 +0900] Scheduler shutting down normally.
+I [04/Sep/2007:13:30:29 +0900] Listening to 0:631
+I [04/Sep/2007:13:30:30 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [04/Sep/2007:13:30:37 +0900] Configured for up to 100 clients.
+I [04/Sep/2007:13:30:37 +0900] Allowing up to 100 client connections per host.
+I [04/Sep/2007:13:30:37 +0900] Full reload is required.
+I [04/Sep/2007:13:30:57 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [04/Sep/2007:13:30:57 +0900] LoadPPDs: No new or changed PPDs...
+I [04/Sep/2007:13:30:57 +0900] Full reload complete.
+I [04/Sep/2007:13:45:39 +0900] Scheduler shutting down normally.
+I [04/Sep/2007:13:49:06 +0900] Listening to 0:631
+I [04/Sep/2007:13:49:06 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [04/Sep/2007:13:49:08 +0900] Configured for up to 100 clients.
+I [04/Sep/2007:13:49:08 +0900] Allowing up to 100 client connections per host.
+I [04/Sep/2007:13:49:08 +0900] Full reload is required.
+I [04/Sep/2007:13:50:11 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [04/Sep/2007:13:50:11 +0900] LoadPPDs: No new or changed PPDs...
+I [04/Sep/2007:13:50:11 +0900] Full reload complete.
+I [12/Oct/2007:12:58:07 +0900] Scheduler shutting down normally.
+I [24/Oct/2007:16:22:22 +0900] Listening to 0:631
+I [24/Oct/2007:16:22:22 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [24/Oct/2007:16:22:23 +0900] Configured for up to 100 clients.
+I [24/Oct/2007:16:22:23 +0900] Allowing up to 100 client connections per host.
+I [24/Oct/2007:16:22:23 +0900] Full reload is required.
+I [24/Oct/2007:16:22:33 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [24/Oct/2007:16:22:33 +0900] LoadPPDs: No new or changed PPDs...
+I [24/Oct/2007:16:22:33 +0900] Full reload complete.
+I [24/Oct/2007:16:43:13 +0900] Scheduler shutting down normally.
+I [24/Oct/2007:16:47:49 +0900] Listening to 0:631
+I [24/Oct/2007:16:47:50 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [24/Oct/2007:16:47:50 +0900] Configured for up to 100 clients.
+I [24/Oct/2007:16:47:50 +0900] Allowing up to 100 client connections per host.
+I [24/Oct/2007:16:47:50 +0900] Full reload is required.
+I [24/Oct/2007:16:48:48 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [24/Oct/2007:16:48:49 +0900] LoadPPDs: No new or changed PPDs...
+I [24/Oct/2007:16:48:49 +0900] Full reload complete.
+I [24/Oct/2007:17:22:13 +0900] Scheduler shutting down normally.
+I [24/Oct/2007:17:26:39 +0900] Listening to 0:631
+I [24/Oct/2007:17:26:39 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [24/Oct/2007:17:26:43 +0900] Configured for up to 100 clients.
+I [24/Oct/2007:17:26:43 +0900] Allowing up to 100 client connections per host.
+I [24/Oct/2007:17:26:43 +0900] Full reload is required.
+I [24/Oct/2007:17:27:10 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [24/Oct/2007:17:27:11 +0900] LoadPPDs: No new or changed PPDs...
+I [24/Oct/2007:17:27:11 +0900] Full reload complete.
+I [24/Oct/2007:17:42:15 +0900] Scheduler shutting down normally.
+I [30/Oct/2007:14:35:30 +0900] Listening to 0:631
+I [30/Oct/2007:14:35:30 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [30/Oct/2007:14:35:35 +0900] Configured for up to 100 clients.
+I [30/Oct/2007:14:35:35 +0900] Allowing up to 100 client connections per host.
+I [30/Oct/2007:14:35:35 +0900] Full reload is required.
+I [30/Oct/2007:14:35:56 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [30/Oct/2007:14:35:57 +0900] LoadPPDs: No new or changed PPDs...
+I [30/Oct/2007:14:35:57 +0900] Full reload complete.
+I [30/Oct/2007:17:02:41 +0900] Scheduler shutting down normally.
+I [30/Oct/2007:14:45:46 +0900] Listening to 0:631
+I [30/Oct/2007:14:45:46 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [30/Oct/2007:14:45:47 +0900] Configured for up to 100 clients.
+I [30/Oct/2007:14:45:47 +0900] Allowing up to 100 client connections per host.
+I [30/Oct/2007:14:45:47 +0900] Full reload is required.
+I [30/Oct/2007:14:45:56 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [30/Oct/2007:14:46:10 +0900] LoadPPDs: No new or changed PPDs...
+I [30/Oct/2007:14:46:10 +0900] Full reload complete.
+I [05/Nov/2007:16:32:32 +0900] Scheduler shutting down normally.
+I [05/Nov/2007:16:41:42 +0900] Listening to 0:631
+I [05/Nov/2007:16:41:42 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [05/Nov/2007:16:41:45 +0900] Configured for up to 100 clients.
+I [05/Nov/2007:16:41:45 +0900] Allowing up to 100 client connections per host.
+I [05/Nov/2007:16:41:45 +0900] Full reload is required.
+I [05/Nov/2007:16:41:49 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [05/Nov/2007:16:41:51 +0900] LoadPPDs: No new or changed PPDs...
+I [05/Nov/2007:16:41:51 +0900] Full reload complete.
+I [05/Nov/2007:18:01:47 +0900] Scheduler shutting down normally.
+I [05/Nov/2007:18:17:27 +0900] Listening to 0:631
+I [05/Nov/2007:18:17:27 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [05/Nov/2007:18:17:28 +0900] Configured for up to 100 clients.
+I [05/Nov/2007:18:17:28 +0900] Allowing up to 100 client connections per host.
+I [05/Nov/2007:18:17:28 +0900] Full reload is required.
+I [05/Nov/2007:18:17:38 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [05/Nov/2007:18:17:45 +0900] LoadPPDs: No new or changed PPDs...
+I [05/Nov/2007:18:17:45 +0900] Full reload complete.
+I [13/Nov/2007:13:51:20 +0900] Scheduler shutting down normally.
+I [13/Nov/2007:13:58:29 +0900] Listening to 0:631
+I [13/Nov/2007:13:58:30 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [13/Nov/2007:13:58:30 +0900] Configured for up to 100 clients.
+I [13/Nov/2007:13:58:30 +0900] Allowing up to 100 client connections per host.
+I [13/Nov/2007:13:58:30 +0900] Full reload is required.
+I [13/Nov/2007:13:58:41 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [13/Nov/2007:14:00:21 +0900] LoadPPDs: No new or changed PPDs...
+I [13/Nov/2007:14:00:21 +0900] Full reload complete.
+I [29/Nov/2007:19:04:57 +0900] Scheduler shutting down normally.
+I [30/Nov/2007:17:25:14 +0900] Listening to 0:631
+I [30/Nov/2007:17:25:14 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [30/Nov/2007:17:25:14 +0900] Configured for up to 100 clients.
+I [30/Nov/2007:17:25:14 +0900] Allowing up to 100 client connections per host.
+I [30/Nov/2007:17:25:14 +0900] Full reload is required.
+I [30/Nov/2007:17:26:47 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [30/Nov/2007:17:26:48 +0900] LoadPPDs: No new or changed PPDs...
+I [30/Nov/2007:17:26:48 +0900] Full reload complete.
+I [15/Jul/2008:18:13:58 +0900] Listening to 0:631
+I [15/Jul/2008:18:13:59 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [15/Jul/2008:18:14:00 +0900] Configured for up to 100 clients.
+I [15/Jul/2008:18:14:00 +0900] Allowing up to 100 client connections per host.
+I [15/Jul/2008:18:14:00 +0900] Full reload is required.
+I [15/Jul/2008:18:15:44 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [15/Jul/2008:18:15:45 +0900] LoadPPDs: No new or changed PPDs...
+I [15/Jul/2008:18:15:45 +0900] Full reload complete.
+I [16/Jul/2008:09:04:17 +0900] Scheduler shutting down normally.
+I [16/Jul/2008:09:40:57 +0900] Listening to 0:631
+I [16/Jul/2008:09:40:58 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [16/Jul/2008:09:41:17 +0900] Configured for up to 100 clients.
+I [16/Jul/2008:09:41:17 +0900] Allowing up to 100 client connections per host.
+I [16/Jul/2008:09:41:17 +0900] Full reload is required.
+I [16/Jul/2008:09:42:17 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [16/Jul/2008:09:42:18 +0900] LoadPPDs: No new or changed PPDs...
+I [16/Jul/2008:09:42:18 +0900] Full reload complete.
+I [16/Jul/2008:10:03:41 +0900] Scheduler shutting down normally.
+I [16/Jul/2008:10:39:57 +0900] Listening to 0:631
+I [16/Jul/2008:10:39:57 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [16/Jul/2008:10:40:00 +0900] Configured for up to 100 clients.
+I [16/Jul/2008:10:40:00 +0900] Allowing up to 100 client connections per host.
+I [16/Jul/2008:10:40:00 +0900] Full reload is required.
+I [16/Jul/2008:10:41:46 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [16/Jul/2008:10:41:46 +0900] LoadPPDs: No new or changed PPDs...
+I [16/Jul/2008:10:41:46 +0900] Full reload complete.
+I [24/Jul/2008:08:43:28 +0900] Scheduler shutting down normally.
+I [24/Jul/2008:15:32:25 +0900] Listening to 0:631
+I [24/Jul/2008:15:32:25 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [24/Jul/2008:15:32:25 +0900] Configured for up to 100 clients.
+I [24/Jul/2008:15:32:25 +0900] Allowing up to 100 client connections per host.
+I [24/Jul/2008:15:32:25 +0900] Full reload is required.
+I [24/Jul/2008:15:32:29 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [24/Jul/2008:15:32:30 +0900] LoadPPDs: No new or changed PPDs...
+I [24/Jul/2008:15:32:30 +0900] Full reload complete.
+I [18/Aug/2008:18:58:20 +0900] Scheduler shutting down normally.
+I [20/Aug/2008:16:41:20 +0900] Listening to 0:631
+I [20/Aug/2008:16:41:20 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [20/Aug/2008:16:41:20 +0900] Configured for up to 100 clients.
+I [20/Aug/2008:16:41:20 +0900] Allowing up to 100 client connections per host.
+I [20/Aug/2008:16:41:20 +0900] Full reload is required.
+I [20/Aug/2008:16:41:44 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [20/Aug/2008:16:43:36 +0900] LoadPPDs: No new or changed PPDs...
+I [20/Aug/2008:16:43:36 +0900] Full reload complete.
+I [17/Jun/2009:17:03:26 +0900] Listening to 0:631
+I [17/Jun/2009:17:03:26 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [17/Jun/2009:17:03:26 +0900] Configured for up to 100 clients.
+I [17/Jun/2009:17:03:26 +0900] Allowing up to 100 client connections per host.
+I [17/Jun/2009:17:03:26 +0900] Full reload is required.
+I [17/Jun/2009:17:03:44 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [17/Jun/2009:17:04:05 +0900] LoadPPDs: No new or changed PPDs...
+I [17/Jun/2009:17:04:05 +0900] Full reload complete.
+I [24/Jun/2009:16:47:33 +0900] Listening to 0:631
+I [24/Jun/2009:16:47:33 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [24/Jun/2009:16:47:33 +0900] Configured for up to 100 clients.
+I [24/Jun/2009:16:47:33 +0900] Allowing up to 100 client connections per host.
+I [24/Jun/2009:16:47:33 +0900] Full reload is required.
+I [24/Jun/2009:16:47:45 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [24/Jun/2009:16:49:29 +0900] LoadPPDs: No new or changed PPDs...
+I [24/Jun/2009:16:49:29 +0900] Full reload complete.
+I [15/Jul/2009:14:44:07 +0900] Scheduler shutting down normally.
+I [15/Jul/2009:14:54:50 +0900] Listening to 0:631
+I [15/Jul/2009:14:54:50 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [15/Jul/2009:14:54:50 +0900] Configured for up to 100 clients.
+I [15/Jul/2009:14:54:50 +0900] Allowing up to 100 client connections per host.
+I [15/Jul/2009:14:54:50 +0900] Full reload is required.
+I [15/Jul/2009:14:55:00 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [15/Jul/2009:14:57:52 +0900] LoadPPDs: No new or changed PPDs...
+I [15/Jul/2009:14:57:52 +0900] Full reload complete.
+I [15/Jul/2009:15:00:41 +0900] Scheduler shutting down normally.
+I [15/Jul/2009:15:24:12 +0900] Listening to 0:631
+I [15/Jul/2009:15:24:13 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [15/Jul/2009:15:24:15 +0900] Configured for up to 100 clients.
+I [15/Jul/2009:15:24:15 +0900] Allowing up to 100 client connections per host.
+I [15/Jul/2009:15:24:15 +0900] Full reload is required.
+I [15/Jul/2009:15:24:20 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [15/Jul/2009:15:24:21 +0900] LoadPPDs: No new or changed PPDs...
+I [15/Jul/2009:15:24:21 +0900] Full reload complete.
+I [21/Aug/2009:14:52:19 +0900] Listening to 0:631
+I [21/Aug/2009:14:52:20 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [21/Aug/2009:14:52:20 +0900] Configured for up to 100 clients.
+I [21/Aug/2009:14:52:20 +0900] Allowing up to 100 client connections per host.
+I [21/Aug/2009:14:52:20 +0900] Full reload is required.
+I [21/Aug/2009:14:52:37 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [21/Aug/2009:14:52:56 +0900] LoadPPDs: No new or changed PPDs...
+I [21/Aug/2009:14:52:56 +0900] Full reload complete.
+I [01/Sep/2009:15:52:53 +0900] Listening to 0:631
+I [01/Sep/2009:15:52:53 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [01/Sep/2009:15:52:54 +0900] Configured for up to 100 clients.
+I [01/Sep/2009:15:52:54 +0900] Allowing up to 100 client connections per host.
+I [01/Sep/2009:15:52:54 +0900] Full reload is required.
+I [01/Sep/2009:15:53:03 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [01/Sep/2009:15:55:05 +0900] LoadPPDs: No new or changed PPDs...
+I [01/Sep/2009:15:55:05 +0900] Full reload complete.
+I [08/Sep/2009:15:50:19 +0900] Listening to 0:631
+I [08/Sep/2009:15:50:19 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [08/Sep/2009:15:50:19 +0900] Configured for up to 100 clients.
+I [08/Sep/2009:15:50:19 +0900] Allowing up to 100 client connections per host.
+I [08/Sep/2009:15:50:19 +0900] Full reload is required.
+I [08/Sep/2009:15:50:30 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [08/Sep/2009:15:52:37 +0900] LoadPPDs: No new or changed PPDs...
+I [08/Sep/2009:15:52:37 +0900] Full reload complete.
+I [08/Sep/2009:16:49:47 +0900] Scheduler shutting down normally.
+I [08/Sep/2009:16:54:01 +0900] Listening to 0:631
+I [08/Sep/2009:16:54:02 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [08/Sep/2009:16:54:04 +0900] Configured for up to 100 clients.
+I [08/Sep/2009:16:54:04 +0900] Allowing up to 100 client connections per host.
+I [08/Sep/2009:16:54:04 +0900] Full reload is required.
+I [08/Sep/2009:16:54:08 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [08/Sep/2009:16:54:09 +0900] LoadPPDs: No new or changed PPDs...
+I [08/Sep/2009:16:54:09 +0900] Full reload complete.
+I [08/Oct/2009:23:47:51 +0900] Listening to 0:631
+I [08/Oct/2009:23:47:51 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [08/Oct/2009:23:47:52 +0900] Configured for up to 100 clients.
+I [08/Oct/2009:23:47:52 +0900] Allowing up to 100 client connections per host.
+I [08/Oct/2009:23:47:52 +0900] Full reload is required.
+I [08/Oct/2009:23:48:03 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [08/Oct/2009:23:48:13 +0900] LoadPPDs: No new or changed PPDs...
+I [08/Oct/2009:23:48:13 +0900] Full reload complete.
+I [09/Oct/2009:00:22:08 +0900] Listening to 0:631
+I [09/Oct/2009:00:22:08 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [09/Oct/2009:00:22:08 +0900] Configured for up to 100 clients.
+I [09/Oct/2009:00:22:08 +0900] Allowing up to 100 client connections per host.
+I [09/Oct/2009:00:22:08 +0900] Full reload is required.
+I [09/Oct/2009:00:28:21 +0900] Listening to 0:631
+I [09/Oct/2009:00:28:22 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [09/Oct/2009:00:28:22 +0900] Configured for up to 100 clients.
+I [09/Oct/2009:00:28:22 +0900] Allowing up to 100 client connections per host.
+I [09/Oct/2009:00:28:22 +0900] Full reload is required.
+I [09/Oct/2009:00:32:40 +0900] Listening to 0:631
+I [09/Oct/2009:00:32:40 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [09/Oct/2009:00:32:41 +0900] Configured for up to 100 clients.
+I [09/Oct/2009:00:32:41 +0900] Allowing up to 100 client connections per host.
+I [09/Oct/2009:00:32:41 +0900] Full reload is required.
+I [09/Oct/2009:00:32:49 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [09/Oct/2009:00:33:05 +0900] LoadPPDs: No new or changed PPDs...
+I [09/Oct/2009:00:33:05 +0900] Full reload complete.
+I [09/Oct/2009:01:21:18 +0900] Listening to 0:631
+I [09/Oct/2009:01:21:18 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [09/Oct/2009:01:21:20 +0900] Configured for up to 100 clients.
+I [09/Oct/2009:01:21:20 +0900] Allowing up to 100 client connections per host.
+I [09/Oct/2009:01:21:20 +0900] Full reload is required.
+I [09/Oct/2009:01:21:23 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [09/Oct/2009:01:21:24 +0900] LoadPPDs: No new or changed PPDs...
+I [09/Oct/2009:01:21:24 +0900] Full reload complete.
+I [10/Oct/2009:02:42:33 +0900] Listening to 0:631
+I [10/Oct/2009:02:42:34 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:02:42:34 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:02:42:34 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:02:42:34 +0900] Full reload is required.
+I [10/Oct/2009:02:42:43 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:02:42:54 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:02:42:54 +0900] Full reload complete.
+I [10/Oct/2009:03:12:20 +0900] Listening to 0:631
+I [10/Oct/2009:03:12:21 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:03:12:21 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:03:12:21 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:03:12:21 +0900] Full reload is required.
+I [10/Oct/2009:03:12:30 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:03:13:47 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:03:13:47 +0900] Full reload complete.
+I [10/Oct/2009:08:12:07 +0900] Listening to 0:631
+I [10/Oct/2009:08:12:07 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:08:12:08 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:08:12:08 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:08:12:08 +0900] Full reload is required.
+I [10/Oct/2009:08:12:15 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:08:13:43 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:08:13:43 +0900] Full reload complete.
+I [10/Oct/2009:10:26:57 +0900] Listening to 0:631
+I [10/Oct/2009:10:26:57 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:10:26:57 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:10:26:57 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:10:26:57 +0900] Full reload is required.
+I [10/Oct/2009:10:27:08 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:10:27:08 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:10:27:08 +0900] Full reload complete.
+I [10/Oct/2009:11:31:42 +0900] Listening to 0:631
+I [10/Oct/2009:11:31:42 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:11:31:43 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:11:31:43 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:11:31:43 +0900] Full reload is required.
+I [10/Oct/2009:11:31:46 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:11:31:48 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:11:31:48 +0900] Full reload complete.
+I [10/Oct/2009:11:37:13 +0900] Listening to 0:631
+I [10/Oct/2009:11:37:13 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:11:37:13 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:11:37:13 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:11:37:13 +0900] Full reload is required.
+I [10/Oct/2009:11:37:58 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:11:37:58 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:11:37:58 +0900] Full reload complete.
+I [10/Oct/2009:11:50:34 +0900] Listening to 0:631
+I [10/Oct/2009:11:50:34 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:11:50:34 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:11:50:34 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:11:50:34 +0900] Full reload is required.
+I [10/Oct/2009:11:50:43 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:11:50:44 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:11:50:44 +0900] Full reload complete.
+I [10/Oct/2009:12:35:15 +0900] Listening to 0:631
+I [10/Oct/2009:12:35:16 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:12:35:16 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:12:35:16 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:12:35:16 +0900] Full reload is required.
+I [10/Oct/2009:12:35:24 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:12:35:35 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:12:35:35 +0900] Full reload complete.
+I [10/Oct/2009:13:17:50 +0900] Listening to 0:631
+I [10/Oct/2009:13:17:50 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:13:17:50 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:13:17:50 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:13:17:50 +0900] Full reload is required.
+I [10/Oct/2009:13:18:00 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:13:19:14 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:13:19:14 +0900] Full reload complete.
+I [10/Oct/2009:13:43:32 +0900] Listening to 0:631
+I [10/Oct/2009:13:43:32 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:13:43:32 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:13:43:32 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:13:43:32 +0900] Full reload is required.
+I [10/Oct/2009:13:43:40 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:13:45:02 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:13:45:02 +0900] Full reload complete.
+I [10/Oct/2009:13:56:41 +0900] Listening to 0:631
+I [10/Oct/2009:13:56:41 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:13:56:41 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:13:56:41 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:13:56:41 +0900] Full reload is required.
+I [10/Oct/2009:13:56:49 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:13:57:58 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:13:57:58 +0900] Full reload complete.
+I [10/Oct/2009:14:04:19 +0900] Listening to 0:631
+I [10/Oct/2009:14:04:19 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:14:04:20 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:14:04:20 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:14:04:20 +0900] Full reload is required.
+I [10/Oct/2009:14:05:07 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:14:05:07 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:14:05:07 +0900] Full reload complete.
+I [10/Oct/2009:14:43:15 +0900] Listening to 0:631
+I [10/Oct/2009:14:43:15 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:14:43:17 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:14:43:17 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:14:43:17 +0900] Full reload is required.
+I [10/Oct/2009:14:43:21 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:14:43:22 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:14:43:22 +0900] Full reload complete.
+I [10/Oct/2009:15:43:03 +0900] Listening to 0:631
+I [10/Oct/2009:15:43:04 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:15:43:04 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:15:43:04 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:15:43:04 +0900] Full reload is required.
+I [10/Oct/2009:15:43:08 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:15:43:08 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:15:43:08 +0900] Full reload complete.
+I [10/Oct/2009:16:42:15 +0900] Listening to 0:631
+I [10/Oct/2009:16:42:16 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:16:42:16 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:16:42:16 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:16:42:16 +0900] Full reload is required.
+I [10/Oct/2009:16:42:25 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:16:42:26 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:16:42:26 +0900] Full reload complete.
+I [10/Oct/2009:17:28:32 +0900] Listening to 0:631
+I [10/Oct/2009:17:28:33 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:17:28:33 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:17:28:33 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:17:28:33 +0900] Full reload is required.
+I [10/Oct/2009:17:28:38 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:17:28:38 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:17:28:38 +0900] Full reload complete.
+I [10/Oct/2009:20:01:41 +0900] Listening to 0:631
+I [10/Oct/2009:20:01:42 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:20:01:42 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:20:01:42 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:20:01:42 +0900] Full reload is required.
+I [10/Oct/2009:20:01:52 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:20:01:53 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:20:01:53 +0900] Full reload complete.
+I [10/Oct/2009:21:22:57 +0900] Listening to 0:631
+I [10/Oct/2009:21:22:57 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:21:22:59 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:21:22:59 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:21:22:59 +0900] Full reload is required.
+I [10/Oct/2009:21:23:04 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:21:23:05 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:21:23:05 +0900] Full reload complete.
+I [10/Oct/2009:21:30:05 +0900] Listening to 0:631
+I [10/Oct/2009:21:30:05 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:21:30:06 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:21:30:06 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:21:30:06 +0900] Full reload is required.
+I [10/Oct/2009:21:30:51 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:21:30:51 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:21:30:51 +0900] Full reload complete.
+I [10/Oct/2009:21:46:52 +0900] Listening to 0:631
+I [10/Oct/2009:21:46:53 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:21:46:54 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:21:46:54 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:21:46:54 +0900] Full reload is required.
+I [10/Oct/2009:21:47:04 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:21:47:04 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:21:47:04 +0900] Full reload complete.
+I [10/Oct/2009:22:09:41 +0900] Listening to 0:631
+I [10/Oct/2009:22:09:43 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:22:09:43 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:22:09:43 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:22:09:43 +0900] Full reload is required.
+I [10/Oct/2009:22:09:48 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:22:09:49 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:22:09:49 +0900] Full reload complete.
+I [10/Oct/2009:22:33:50 +0900] Listening to 0:631
+I [10/Oct/2009:22:33:51 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:22:33:51 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:22:33:51 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:22:33:51 +0900] Full reload is required.
+I [10/Oct/2009:22:34:02 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:22:34:02 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:22:34:02 +0900] Full reload complete.
+I [10/Oct/2009:23:07:21 +0900] Listening to 0:631
+I [10/Oct/2009:23:07:21 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:23:07:21 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:23:07:21 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:23:07:21 +0900] Full reload is required.
+I [10/Oct/2009:23:07:36 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:23:07:36 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:23:07:36 +0900] Full reload complete.
+I [10/Oct/2009:23:37:38 +0900] Listening to 0:631
+I [10/Oct/2009:23:37:39 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [10/Oct/2009:23:37:39 +0900] Configured for up to 100 clients.
+I [10/Oct/2009:23:37:39 +0900] Allowing up to 100 client connections per host.
+I [10/Oct/2009:23:37:39 +0900] Full reload is required.
+I [10/Oct/2009:23:37:54 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [10/Oct/2009:23:37:55 +0900] LoadPPDs: No new or changed PPDs...
+I [10/Oct/2009:23:37:55 +0900] Full reload complete.
+I [11/Oct/2009:00:14:28 +0900] Listening to 0:631
+I [11/Oct/2009:00:14:31 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:00:14:32 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:00:14:32 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:00:14:32 +0900] Full reload is required.
+I [11/Oct/2009:00:14:42 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:00:14:42 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:00:14:42 +0900] Full reload complete.
+I [11/Oct/2009:01:13:49 +0900] Listening to 0:631
+I [11/Oct/2009:01:13:50 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:01:13:50 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:01:13:50 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:01:13:50 +0900] Full reload is required.
+I [11/Oct/2009:01:13:59 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:01:13:59 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:01:13:59 +0900] Full reload complete.
+I [11/Oct/2009:01:35:41 +0900] Listening to 0:631
+I [11/Oct/2009:01:35:42 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:01:35:42 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:01:35:42 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:01:35:42 +0900] Full reload is required.
+I [11/Oct/2009:01:35:48 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:01:35:49 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:01:35:49 +0900] Full reload complete.
+I [11/Oct/2009:01:49:45 +0900] Listening to 0:631
+I [11/Oct/2009:01:49:45 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:01:49:45 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:01:49:45 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:01:49:45 +0900] Full reload is required.
+I [11/Oct/2009:01:50:02 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:01:50:03 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:01:50:03 +0900] Full reload complete.
+I [11/Oct/2009:02:16:40 +0900] Listening to 0:631
+I [11/Oct/2009:02:16:41 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:02:16:41 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:02:16:41 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:02:16:41 +0900] Full reload is required.
+I [11/Oct/2009:02:16:56 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:02:16:57 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:02:16:57 +0900] Full reload complete.
+I [11/Oct/2009:03:04:10 +0900] Listening to 0:631
+I [11/Oct/2009:03:04:12 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:03:04:12 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:03:04:12 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:03:04:12 +0900] Full reload is required.
+I [11/Oct/2009:03:04:23 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:03:04:24 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:03:04:24 +0900] Full reload complete.
+I [11/Oct/2009:03:37:17 +0900] Listening to 0:631
+I [11/Oct/2009:03:37:17 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:03:37:17 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:03:37:17 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:03:37:17 +0900] Full reload is required.
+I [11/Oct/2009:03:37:27 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:03:37:41 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:03:37:41 +0900] Full reload complete.
+I [11/Oct/2009:03:48:14 +0900] Listening to 0:631
+I [11/Oct/2009:03:48:15 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:03:48:15 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:03:48:15 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:03:48:15 +0900] Full reload is required.
+I [11/Oct/2009:03:48:23 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:03:48:24 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:03:48:24 +0900] Full reload complete.
+I [11/Oct/2009:04:43:29 +0900] Listening to 0:631
+I [11/Oct/2009:04:43:29 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:04:43:29 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:04:43:29 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:04:43:29 +0900] Full reload is required.
+I [11/Oct/2009:04:43:46 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:04:43:47 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:04:43:47 +0900] Full reload complete.
+I [11/Oct/2009:04:51:05 +0900] Listening to 0:631
+I [11/Oct/2009:04:51:05 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:04:51:06 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:04:51:06 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:04:51:06 +0900] Full reload is required.
+I [11/Oct/2009:04:51:19 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:04:51:19 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:04:51:19 +0900] Full reload complete.
+I [11/Oct/2009:05:08:07 +0900] Listening to 0:631
+I [11/Oct/2009:05:08:09 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:05:08:09 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:05:08:09 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:05:08:09 +0900] Full reload is required.
+I [11/Oct/2009:05:08:17 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:05:08:17 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:05:08:17 +0900] Full reload complete.
+I [11/Oct/2009:05:51:44 +0900] Listening to 0:631
+I [11/Oct/2009:05:51:44 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:05:51:44 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:05:51:44 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:05:51:44 +0900] Full reload is required.
+I [11/Oct/2009:05:52:02 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:05:52:03 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:05:52:03 +0900] Full reload complete.
+I [11/Oct/2009:06:05:12 +0900] Listening to 0:631
+I [11/Oct/2009:06:05:13 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:06:05:13 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:06:05:13 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:06:05:13 +0900] Full reload is required.
+I [11/Oct/2009:06:05:24 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:06:05:25 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:06:05:25 +0900] Full reload complete.
+I [11/Oct/2009:06:31:54 +0900] Listening to 0:631
+I [11/Oct/2009:06:31:54 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:06:31:54 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:06:31:54 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:06:31:54 +0900] Full reload is required.
+I [11/Oct/2009:06:32:12 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:06:32:12 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:06:32:12 +0900] Full reload complete.
+I [11/Oct/2009:07:10:32 +0900] Listening to 0:631
+I [11/Oct/2009:07:10:32 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:07:10:33 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:07:10:33 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:07:10:33 +0900] Full reload is required.
+I [11/Oct/2009:07:14:18 +0900] Listening to 0:631
+I [11/Oct/2009:07:14:19 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:07:14:19 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:07:14:19 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:07:14:19 +0900] Full reload is required.
+I [11/Oct/2009:07:14:28 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:07:14:29 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:07:14:29 +0900] Full reload complete.
+I [11/Oct/2009:13:33:05 +0900] Listening to 0:631
+I [11/Oct/2009:13:33:05 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:13:33:05 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:13:33:05 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:13:33:05 +0900] Full reload is required.
+I [11/Oct/2009:13:33:23 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:13:33:25 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:13:33:25 +0900] Full reload complete.
+I [11/Oct/2009:14:58:13 +0900] Listening to 0:631
+I [11/Oct/2009:14:58:13 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:14:58:13 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:14:58:13 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:14:58:13 +0900] Full reload is required.
+I [11/Oct/2009:14:58:30 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:14:58:30 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:14:58:30 +0900] Full reload complete.
+I [11/Oct/2009:18:57:40 +0900] Listening to 0:631
+I [11/Oct/2009:18:57:41 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:18:57:42 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:18:57:42 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:18:57:42 +0900] Full reload is required.
+I [11/Oct/2009:18:57:49 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:18:57:50 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:18:57:50 +0900] Full reload complete.
+I [11/Oct/2009:19:08:43 +0900] Listening to 0:631
+I [11/Oct/2009:19:08:44 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:19:08:44 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:19:08:44 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:19:08:44 +0900] Full reload is required.
+I [11/Oct/2009:19:08:51 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:19:08:51 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:19:08:51 +0900] Full reload complete.
+I [11/Oct/2009:19:12:48 +0900] Listening to 0:631
+I [11/Oct/2009:19:12:49 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:19:12:50 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:19:12:50 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:19:12:50 +0900] Full reload is required.
+I [11/Oct/2009:19:12:54 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:19:12:55 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:19:12:55 +0900] Full reload complete.
+I [11/Oct/2009:21:16:57 +0900] Listening to 0:631
+I [11/Oct/2009:21:16:57 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:21:16:57 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:21:16:57 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:21:16:57 +0900] Full reload is required.
+I [11/Oct/2009:21:17:12 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:21:17:13 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:21:17:13 +0900] Full reload complete.
+I [11/Oct/2009:22:08:43 +0900] Listening to 0:631
+I [11/Oct/2009:22:08:44 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Oct/2009:22:08:45 +0900] Configured for up to 100 clients.
+I [11/Oct/2009:22:08:45 +0900] Allowing up to 100 client connections per host.
+I [11/Oct/2009:22:08:45 +0900] Full reload is required.
+I [11/Oct/2009:22:08:56 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [11/Oct/2009:22:08:56 +0900] LoadPPDs: No new or changed PPDs...
+I [11/Oct/2009:22:08:56 +0900] Full reload complete.
+I [12/Oct/2009:15:54:11 +0900] Listening to 0:631
+I [12/Oct/2009:15:54:11 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [12/Oct/2009:15:54:11 +0900] Configured for up to 100 clients.
+I [12/Oct/2009:15:54:11 +0900] Allowing up to 100 client connections per host.
+I [12/Oct/2009:15:54:11 +0900] Full reload is required.
+I [12/Oct/2009:15:54:31 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [12/Oct/2009:15:54:31 +0900] LoadPPDs: No new or changed PPDs...
+I [12/Oct/2009:15:54:31 +0900] Full reload complete.
+I [14/Oct/2009:03:00:11 +0900] Listening to 0:631
+I [14/Oct/2009:03:00:13 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:03:00:14 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:03:00:14 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:03:00:14 +0900] Full reload is required.
+I [14/Oct/2009:03:00:27 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:03:00:28 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:03:00:28 +0900] Full reload complete.
+I [14/Oct/2009:05:03:12 +0900] Listening to 0:631
+I [14/Oct/2009:05:03:13 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:05:03:13 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:05:03:13 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:05:03:13 +0900] Full reload is required.
+I [14/Oct/2009:05:03:23 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:05:03:24 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:05:03:24 +0900] Full reload complete.
+I [14/Oct/2009:05:29:25 +0900] Listening to 0:631
+I [14/Oct/2009:05:29:26 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:05:29:26 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:05:29:26 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:05:29:26 +0900] Full reload is required.
+I [14/Oct/2009:05:29:35 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:05:29:35 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:05:29:35 +0900] Full reload complete.
+I [14/Oct/2009:05:35:07 +0900] Listening to 0:631
+I [14/Oct/2009:05:35:08 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:05:35:09 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:05:35:09 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:05:35:09 +0900] Full reload is required.
+I [14/Oct/2009:05:35:17 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:05:35:18 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:05:35:18 +0900] Full reload complete.
+I [14/Oct/2009:05:42:34 +0900] Listening to 0:631
+I [14/Oct/2009:05:42:35 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:05:42:35 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:05:42:35 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:05:42:35 +0900] Full reload is required.
+I [14/Oct/2009:05:42:44 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:05:42:45 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:05:42:45 +0900] Full reload complete.
+I [14/Oct/2009:12:07:18 +0900] Listening to 0:631
+I [14/Oct/2009:12:07:18 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:12:07:18 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:12:07:18 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:12:07:18 +0900] Full reload is required.
+I [14/Oct/2009:12:07:37 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:12:07:38 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:12:07:38 +0900] Full reload complete.
+I [14/Oct/2009:12:12:23 +0900] Listening to 0:631
+I [14/Oct/2009:12:12:24 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:12:12:24 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:12:12:24 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:12:12:24 +0900] Full reload is required.
+I [14/Oct/2009:12:16:11 +0900] Listening to 0:631
+I [14/Oct/2009:12:16:12 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:12:16:13 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:12:16:13 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:12:16:13 +0900] Full reload is required.
+I [14/Oct/2009:12:16:24 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:12:16:24 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:12:16:24 +0900] Full reload complete.
+I [14/Oct/2009:12:28:45 +0900] Listening to 0:631
+I [14/Oct/2009:12:28:46 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:12:28:46 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:12:28:46 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:12:28:46 +0900] Full reload is required.
+I [14/Oct/2009:12:28:53 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:12:28:53 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:12:28:53 +0900] Full reload complete.
+I [14/Oct/2009:14:11:49 +0900] Listening to 0:631
+I [14/Oct/2009:14:11:50 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:14:11:50 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:14:11:50 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:14:11:50 +0900] Full reload is required.
+I [14/Oct/2009:14:11:53 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:14:11:53 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:14:11:53 +0900] Full reload complete.
+I [14/Oct/2009:15:08:18 +0900] Listening to 0:631
+I [14/Oct/2009:15:08:19 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:15:08:19 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:15:08:19 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:15:08:19 +0900] Full reload is required.
+I [14/Oct/2009:15:08:33 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:15:08:33 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:15:08:33 +0900] Full reload complete.
+I [14/Oct/2009:15:14:55 +0900] Listening to 0:631
+I [14/Oct/2009:15:14:56 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:15:14:56 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:15:14:56 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:15:14:56 +0900] Full reload is required.
+I [14/Oct/2009:15:15:06 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:15:15:06 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:15:15:06 +0900] Full reload complete.
+I [14/Oct/2009:15:27:50 +0900] Listening to 0:631
+I [14/Oct/2009:15:27:52 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:15:27:52 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:15:27:52 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:15:27:52 +0900] Full reload is required.
+I [14/Oct/2009:15:27:58 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:15:27:58 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:15:27:58 +0900] Full reload complete.
+I [14/Oct/2009:17:53:09 +0900] Listening to 0:631
+I [14/Oct/2009:17:53:09 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:17:53:10 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:17:53:10 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:17:53:10 +0900] Full reload is required.
+I [14/Oct/2009:17:53:19 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:17:53:20 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:17:53:20 +0900] Full reload complete.
+I [14/Oct/2009:18:01:02 +0900] Listening to 0:631
+I [14/Oct/2009:18:01:02 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:18:01:03 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:18:01:03 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:18:01:03 +0900] Full reload is required.
+I [14/Oct/2009:18:05:08 +0900] Listening to 0:631
+I [14/Oct/2009:18:05:10 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:18:05:10 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:18:05:10 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:18:05:10 +0900] Full reload is required.
+I [14/Oct/2009:18:05:17 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:18:05:18 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:18:05:18 +0900] Full reload complete.
+I [14/Oct/2009:18:18:04 +0900] Listening to 0:631
+I [14/Oct/2009:18:18:05 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [14/Oct/2009:18:18:05 +0900] Configured for up to 100 clients.
+I [14/Oct/2009:18:18:05 +0900] Allowing up to 100 client connections per host.
+I [14/Oct/2009:18:18:05 +0900] Full reload is required.
+I [14/Oct/2009:18:18:15 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [14/Oct/2009:18:18:30 +0900] LoadPPDs: No new or changed PPDs...
+I [14/Oct/2009:18:18:30 +0900] Full reload complete.
+I [15/Oct/2009:00:25:26 +0900] Listening to 0:631
+I [15/Oct/2009:00:25:27 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [15/Oct/2009:00:25:27 +0900] Configured for up to 100 clients.
+I [15/Oct/2009:00:25:27 +0900] Allowing up to 100 client connections per host.
+I [15/Oct/2009:00:25:27 +0900] Full reload is required.
+I [15/Oct/2009:00:25:32 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [15/Oct/2009:00:25:32 +0900] LoadPPDs: No new or changed PPDs...
+I [15/Oct/2009:00:25:32 +0900] Full reload complete.
+I [15/Oct/2009:00:49:47 +0900] Listening to 0:631
+I [15/Oct/2009:00:49:48 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [15/Oct/2009:00:49:49 +0900] Configured for up to 100 clients.
+I [15/Oct/2009:00:49:49 +0900] Allowing up to 100 client connections per host.
+I [15/Oct/2009:00:49:49 +0900] Full reload is required.
+I [15/Oct/2009:00:49:57 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [15/Oct/2009:00:49:57 +0900] LoadPPDs: No new or changed PPDs...
+I [15/Oct/2009:00:49:57 +0900] Full reload complete.
+I [15/Oct/2009:17:00:43 +0900] Listening to 0:631
+I [15/Oct/2009:17:00:44 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [15/Oct/2009:17:00:44 +0900] Configured for up to 100 clients.
+I [15/Oct/2009:17:00:44 +0900] Allowing up to 100 client connections per host.
+I [15/Oct/2009:17:00:44 +0900] Full reload is required.
+I [15/Oct/2009:17:01:34 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [15/Oct/2009:17:01:35 +0900] LoadPPDs: No new or changed PPDs...
+I [15/Oct/2009:17:01:35 +0900] Full reload complete.
+I [15/Oct/2009:17:14:32 +0900] Listening to 0:631
+I [15/Oct/2009:17:14:33 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [15/Oct/2009:17:14:33 +0900] Configured for up to 100 clients.
+I [15/Oct/2009:17:14:33 +0900] Allowing up to 100 client connections per host.
+I [15/Oct/2009:17:14:33 +0900] Full reload is required.
+I [15/Oct/2009:17:14:41 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [15/Oct/2009:17:14:41 +0900] LoadPPDs: No new or changed PPDs...
+I [15/Oct/2009:17:14:41 +0900] Full reload complete.
+I [19/Oct/2009:13:48:33 +0900] Listening to 0:631
+I [19/Oct/2009:13:48:33 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [19/Oct/2009:13:48:33 +0900] Configured for up to 100 clients.
+I [19/Oct/2009:13:48:33 +0900] Allowing up to 100 client connections per host.
+I [19/Oct/2009:13:48:33 +0900] Full reload is required.
+I [19/Oct/2009:13:48:41 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [19/Oct/2009:13:48:42 +0900] LoadPPDs: No new or changed PPDs...
+I [19/Oct/2009:13:48:42 +0900] Full reload complete.
+I [19/Oct/2009:14:15:57 +0900] Scheduler shutting down normally.
+I [19/Oct/2009:14:20:44 +0900] Listening to 0:631
+I [19/Oct/2009:14:20:45 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [19/Oct/2009:14:20:45 +0900] Configured for up to 100 clients.
+I [19/Oct/2009:14:20:45 +0900] Allowing up to 100 client connections per host.
+I [19/Oct/2009:14:20:45 +0900] Full reload is required.
+I [19/Oct/2009:14:20:46 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [19/Oct/2009:14:20:47 +0900] LoadPPDs: No new or changed PPDs...
+I [19/Oct/2009:14:20:47 +0900] Full reload complete.
+I [19/Oct/2009:14:23:34 +0900] Scheduler shutting down normally.
+I [19/Oct/2009:14:29:05 +0900] Listening to 0:631
+I [19/Oct/2009:14:29:05 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [19/Oct/2009:14:29:05 +0900] Configured for up to 100 clients.
+I [19/Oct/2009:14:29:05 +0900] Allowing up to 100 client connections per host.
+I [19/Oct/2009:14:29:05 +0900] Full reload is required.
+I [19/Oct/2009:14:29:06 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [19/Oct/2009:14:29:07 +0900] LoadPPDs: No new or changed PPDs...
+I [19/Oct/2009:14:29:07 +0900] Full reload complete.
+I [19/Oct/2009:14:38:17 +0900] Scheduler shutting down normally.
+I [19/Oct/2009:14:43:45 +0900] Listening to 0:631
+I [19/Oct/2009:14:43:45 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [19/Oct/2009:14:43:45 +0900] Configured for up to 100 clients.
+I [19/Oct/2009:14:43:45 +0900] Allowing up to 100 client connections per host.
+I [19/Oct/2009:14:43:45 +0900] Full reload is required.
+I [19/Oct/2009:14:43:46 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [19/Oct/2009:14:43:47 +0900] LoadPPDs: No new or changed PPDs...
+I [19/Oct/2009:14:43:47 +0900] Full reload complete.
+I [21/Oct/2009:09:13:42 +0900] Scheduler shutting down normally.
+I [21/Oct/2009:09:20:50 +0900] Listening to 0:631
+I [21/Oct/2009:09:20:50 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [21/Oct/2009:09:20:51 +0900] Configured for up to 100 clients.
+I [21/Oct/2009:09:20:51 +0900] Allowing up to 100 client connections per host.
+I [21/Oct/2009:09:20:51 +0900] Full reload is required.
+I [21/Oct/2009:09:20:51 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [21/Oct/2009:09:20:52 +0900] LoadPPDs: No new or changed PPDs...
+I [21/Oct/2009:09:20:52 +0900] Full reload complete.
+I [21/Oct/2009:09:34:28 +0900] Scheduler shutting down normally.
+I [21/Oct/2009:15:08:00 +0900] Listening to 0:631
+I [21/Oct/2009:15:08:01 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [21/Oct/2009:15:08:01 +0900] Configured for up to 100 clients.
+I [21/Oct/2009:15:08:01 +0900] Allowing up to 100 client connections per host.
+I [21/Oct/2009:15:08:01 +0900] Full reload is required.
+I [21/Oct/2009:15:08:21 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [21/Oct/2009:15:08:21 +0900] LoadPPDs: No new or changed PPDs...
+I [21/Oct/2009:15:08:21 +0900] Full reload complete.
+I [21/Oct/2009:15:22:19 +0900] Scheduler shutting down normally.
+I [21/Oct/2009:15:28:37 +0900] Listening to 0:631
+I [21/Oct/2009:15:28:38 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [21/Oct/2009:15:28:38 +0900] Configured for up to 100 clients.
+I [21/Oct/2009:15:28:38 +0900] Allowing up to 100 client connections per host.
+I [21/Oct/2009:15:28:38 +0900] Full reload is required.
+I [21/Oct/2009:15:28:51 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [21/Oct/2009:15:28:51 +0900] LoadPPDs: No new or changed PPDs...
+I [21/Oct/2009:15:28:51 +0900] Full reload complete.
+I [21/Oct/2009:15:30:21 +0900] Scheduler shutting down normally.
+I [21/Oct/2009:15:34:06 +0900] Listening to 0:631
+I [21/Oct/2009:15:34:06 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [21/Oct/2009:15:34:06 +0900] Configured for up to 100 clients.
+I [21/Oct/2009:15:34:06 +0900] Allowing up to 100 client connections per host.
+I [21/Oct/2009:15:34:06 +0900] Full reload is required.
+I [21/Oct/2009:15:34:53 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [21/Oct/2009:15:34:53 +0900] LoadPPDs: No new or changed PPDs...
+I [21/Oct/2009:15:34:53 +0900] Full reload complete.
+I [27/Jan/2010:15:48:09 +0900] Scheduler shutting down normally.
+I [27/Jan/2010:15:55:06 +0900] Listening to 0:631
+I [27/Jan/2010:15:55:06 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [27/Jan/2010:15:55:06 +0900] Configured for up to 100 clients.
+I [27/Jan/2010:15:55:06 +0900] Allowing up to 100 client connections per host.
+I [27/Jan/2010:15:55:06 +0900] Full reload is required.
+I [27/Jan/2010:15:55:09 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [27/Jan/2010:15:55:12 +0900] LoadPPDs: No new or changed PPDs...
+I [27/Jan/2010:15:55:12 +0900] Full reload complete.
+I [27/Jan/2010:16:15:32 +0900] Scheduler shutting down normally.
+I [27/Jan/2010:16:23:41 +0900] Listening to 0:631
+I [27/Jan/2010:16:23:41 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [27/Jan/2010:16:23:42 +0900] Configured for up to 100 clients.
+I [27/Jan/2010:16:23:42 +0900] Allowing up to 100 client connections per host.
+I [27/Jan/2010:16:23:42 +0900] Full reload is required.
+I [27/Jan/2010:16:24:03 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [27/Jan/2010:16:24:15 +0900] LoadPPDs: No new or changed PPDs...
+I [27/Jan/2010:16:24:16 +0900] Full reload complete.
+I [27/Jan/2010:16:27:25 +0900] Scheduler shutting down normally.
+I [27/Jan/2010:16:31:56 +0900] Listening to 0:631
+I [27/Jan/2010:16:31:56 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [27/Jan/2010:16:31:56 +0900] Configured for up to 100 clients.
+I [27/Jan/2010:16:31:56 +0900] Allowing up to 100 client connections per host.
+I [27/Jan/2010:16:31:56 +0900] Full reload is required.
+I [27/Jan/2010:16:32:00 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [27/Jan/2010:16:32:01 +0900] LoadPPDs: No new or changed PPDs...
+I [27/Jan/2010:16:32:01 +0900] Full reload complete.
+I [28/Jan/2010:16:22:11 +0900] Scheduler shutting down normally.
+I [28/Jan/2010:16:36:43 +0900] Listening to 0:631
+I [28/Jan/2010:16:36:43 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [28/Jan/2010:16:36:43 +0900] Configured for up to 100 clients.
+I [28/Jan/2010:16:36:43 +0900] Allowing up to 100 client connections per host.
+I [28/Jan/2010:16:36:43 +0900] Full reload is required.
+I [28/Jan/2010:16:36:53 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [28/Jan/2010:16:37:38 +0900] LoadPPDs: No new or changed PPDs...
+I [28/Jan/2010:16:37:38 +0900] Full reload complete.
+I [09/Feb/2010:14:00:29 +0900] Listening to 0:631
+I [09/Feb/2010:14:00:29 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [09/Feb/2010:14:00:29 +0900] Configured for up to 100 clients.
+I [09/Feb/2010:14:00:29 +0900] Allowing up to 100 client connections per host.
+I [09/Feb/2010:14:00:29 +0900] Full reload is required.
+I [09/Feb/2010:14:00:32 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [09/Feb/2010:14:00:35 +0900] LoadPPDs: No new or changed PPDs...
+I [09/Feb/2010:14:00:35 +0900] Full reload complete.
+I [25/Feb/2010:18:31:27 +0900] Listening to 0:631
+I [25/Feb/2010:18:31:28 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [25/Feb/2010:18:31:28 +0900] Configured for up to 100 clients.
+I [25/Feb/2010:18:31:28 +0900] Allowing up to 100 client connections per host.
+I [25/Feb/2010:18:31:28 +0900] Full reload is required.
+I [25/Feb/2010:18:31:42 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [25/Feb/2010:18:31:43 +0900] LoadPPDs: No new or changed PPDs...
+I [25/Feb/2010:18:31:43 +0900] Full reload complete.
+I [13/Mar/2010:11:45:06 +0900] Scheduler shutting down normally.
+I [15/Mar/2010:13:09:41 +0900] Listening to 0:631
+I [15/Mar/2010:13:09:42 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [15/Mar/2010:13:09:42 +0900] Configured for up to 100 clients.
+I [15/Mar/2010:13:09:42 +0900] Allowing up to 100 client connections per host.
+I [15/Mar/2010:13:09:42 +0900] Full reload is required.
+I [15/Mar/2010:13:09:55 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [15/Mar/2010:13:10:15 +0900] LoadPPDs: No new or changed PPDs...
+I [15/Mar/2010:13:10:15 +0900] Full reload complete.
+I [16/Aug/2010:15:15:37 +0900] Scheduler shutting down normally.
+I [20/Aug/2010:15:13:28 +0900] Listening to 0:631
+I [20/Aug/2010:15:13:28 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [20/Aug/2010:15:13:30 +0900] Configured for up to 100 clients.
+I [20/Aug/2010:15:13:30 +0900] Allowing up to 100 client connections per host.
+I [20/Aug/2010:15:13:30 +0900] Full reload is required.
+I [20/Aug/2010:15:13:34 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [20/Aug/2010:15:13:35 +0900] LoadPPDs: No new or changed PPDs...
+I [20/Aug/2010:15:13:35 +0900] Full reload complete.
+I [20/Aug/2010:15:16:06 +0900] Scheduler shutting down normally.
+I [20/Aug/2010:15:52:25 +0900] Listening to 0:631
+I [20/Aug/2010:15:52:26 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [20/Aug/2010:15:52:26 +0900] Configured for up to 100 clients.
+I [20/Aug/2010:15:52:26 +0900] Allowing up to 100 client connections per host.
+I [20/Aug/2010:15:52:26 +0900] Full reload is required.
+I [20/Aug/2010:15:52:45 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [20/Aug/2010:15:52:46 +0900] LoadPPDs: No new or changed PPDs...
+I [20/Aug/2010:15:52:46 +0900] Full reload complete.
+I [02/Dec/2010:15:07:19 +0900] Listening to 0:631
+I [02/Dec/2010:15:07:19 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [02/Dec/2010:15:07:19 +0900] Configured for up to 100 clients.
+I [02/Dec/2010:15:07:19 +0900] Allowing up to 100 client connections per host.
+I [02/Dec/2010:15:07:19 +0900] Full reload is required.
+I [02/Dec/2010:15:07:31 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [02/Dec/2010:15:07:48 +0900] LoadPPDs: No new or changed PPDs...
+I [02/Dec/2010:15:07:48 +0900] Full reload complete.
+I [03/Dec/2010:20:11:38 +0900] Scheduler shutting down normally.
+I [03/Dec/2010:20:22:00 +0900] Listening to 0:631
+I [03/Dec/2010:20:22:01 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [03/Dec/2010:20:22:01 +0900] Configured for up to 100 clients.
+I [03/Dec/2010:20:22:01 +0900] Allowing up to 100 client connections per host.
+I [03/Dec/2010:20:22:01 +0900] Full reload is required.
+I [03/Dec/2010:20:22:45 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [03/Dec/2010:20:22:46 +0900] LoadPPDs: No new or changed PPDs...
+I [03/Dec/2010:20:22:46 +0900] Full reload complete.
+I [06/Dec/2010:12:36:30 +0900] Scheduler shutting down normally.
+I [06/Dec/2010:12:44:37 +0900] Listening to 0:631
+I [06/Dec/2010:12:44:37 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [06/Dec/2010:12:44:37 +0900] Configured for up to 100 clients.
+I [06/Dec/2010:12:44:37 +0900] Allowing up to 100 client connections per host.
+I [06/Dec/2010:12:44:37 +0900] Full reload is required.
+I [06/Dec/2010:12:44:38 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [06/Dec/2010:12:44:39 +0900] LoadPPDs: No new or changed PPDs...
+I [06/Dec/2010:12:44:39 +0900] Full reload complete.
+I [06/Dec/2010:12:56:59 +0900] Scheduler shutting down normally.
+I [06/Dec/2010:13:06:05 +0900] Listening to 0:631
+I [06/Dec/2010:13:06:06 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [06/Dec/2010:13:06:07 +0900] Configured for up to 100 clients.
+I [06/Dec/2010:13:06:07 +0900] Allowing up to 100 client connections per host.
+I [06/Dec/2010:13:06:07 +0900] Full reload is required.
+I [06/Dec/2010:13:06:19 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [06/Dec/2010:13:06:42 +0900] LoadPPDs: No new or changed PPDs...
+I [06/Dec/2010:13:06:42 +0900] Full reload complete.
+I [01/Feb/2011:14:29:46 +0900] Listening to 0:631
+I [01/Feb/2011:14:29:46 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [01/Feb/2011:14:29:46 +0900] Configured for up to 100 clients.
+I [01/Feb/2011:14:29:46 +0900] Allowing up to 100 client connections per host.
+I [01/Feb/2011:14:29:46 +0900] Full reload is required.
+I [01/Feb/2011:14:29:51 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [01/Feb/2011:14:29:52 +0900] LoadPPDs: No new or changed PPDs...
+I [01/Feb/2011:14:29:52 +0900] Full reload complete.
+I [01/Feb/2011:14:44:16 +0900] Scheduler shutting down normally.
+I [01/Feb/2011:15:02:17 +0900] Listening to 0:631
+I [01/Feb/2011:15:02:19 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [01/Feb/2011:15:02:19 +0900] Configured for up to 100 clients.
+I [01/Feb/2011:15:02:19 +0900] Allowing up to 100 client connections per host.
+I [01/Feb/2011:15:02:19 +0900] Full reload is required.
+I [01/Feb/2011:15:02:56 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [01/Feb/2011:15:02:57 +0900] LoadPPDs: No new or changed PPDs...
+I [01/Feb/2011:15:02:57 +0900] Full reload complete.
+I [06/May/2011:16:30:45 +0900] Scheduler shutting down normally.
+I [06/May/2011:17:30:15 +0900] Listening to 0:631
+I [06/May/2011:17:30:16 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [06/May/2011:17:30:16 +0900] Configured for up to 100 clients.
+I [06/May/2011:17:30:16 +0900] Allowing up to 100 client connections per host.
+I [06/May/2011:17:30:16 +0900] Full reload is required.
+I [06/May/2011:17:30:26 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [06/May/2011:17:30:48 +0900] LoadPPDs: No new or changed PPDs...
+I [06/May/2011:17:30:48 +0900] Full reload complete.
+I [18/Aug/2011:16:28:01 +0900] Scheduler shutting down normally.
+I [23/Aug/2011:14:23:01 +0900] Listening to 0:631
+I [23/Aug/2011:14:23:01 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [23/Aug/2011:14:23:01 +0900] Configured for up to 100 clients.
+I [23/Aug/2011:14:23:01 +0900] Allowing up to 100 client connections per host.
+I [23/Aug/2011:14:23:01 +0900] Full reload is required.
+I [23/Aug/2011:14:23:21 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [23/Aug/2011:14:23:22 +0900] LoadPPDs: No new or changed PPDs...
+I [23/Aug/2011:14:23:22 +0900] Full reload complete.
+I [16/Dec/2011:14:42:35 +0900] Listening to 0:631
+I [16/Dec/2011:14:42:35 +0900] Loaded configuration file "/etc/cups/cupsd.conf"
+I [16/Dec/2011:14:42:35 +0900] Configured for up to 100 clients.
+I [16/Dec/2011:14:42:35 +0900] Allowing up to 100 client connections per host.
+I [16/Dec/2011:14:42:35 +0900] Full reload is required.
+I [16/Dec/2011:14:42:59 +0900] LoadPPDs: Read "/etc/cups/ppds.dat", 4274 PPDs...
+I [16/Dec/2011:14:43:00 +0900] LoadPPDs: No new or changed PPDs...
+I [16/Dec/2011:14:43:00 +0900] Full reload complete.

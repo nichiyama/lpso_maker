@@ -1,0 +1,5 @@
+[General]
+AnimateButtons=false
+CloseOnMenuDoubleClick=true
+TitleAlignment=AlignHCenter
+TitleShadow=false

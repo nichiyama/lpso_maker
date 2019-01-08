@@ -1,0 +1,1602 @@
+
+Pass 1 started.
+Mon Oct 19 15:31:50 JST 2009
+  Process 0 was completed.
+  Process 1 was completed.
+  Process 2 was completed.
+  Process 3 was completed.
+  Process 4 was completed.
+  Process 5 was completed.
+  Process 6 was completed.
+  Process 7 was completed.
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.934000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.909000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.932000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+Pass 1 was succesfully completed.
+
+Pass 2 started.
+Mon Oct 19 16:28:56 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.910000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.925000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.929000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.935000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.923000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.911000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.939000 GFLOPS
+
+Pass 2 was succesfully completed.
+
+Pass 3 started.
+Mon Oct 19 17:25:55 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.904000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.903000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.911000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.933000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.922000 GFLOPS
+
+Pass 3 was succesfully completed.
+
+Pass 4 started.
+Mon Oct 19 18:22:58 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.918000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.910000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.917000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.935000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.944000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.940000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+Pass 4 was succesfully completed.
+
+Pass 5 started.
+Mon Oct 19 19:19:56 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.910000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.905000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.925000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.934000 GFLOPS
+
+Pass 5 was succesfully completed.
+
+Pass 6 started.
+Mon Oct 19 20:17:05 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.901000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.932000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.906000 GFLOPS
+
+Pass 6 was succesfully completed.
+
+Pass 7 started.
+Mon Oct 19 21:14:20 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.902000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.935000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.903000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.938000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.905000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+Pass 7 was succesfully completed.
+
+Pass 8 started.
+Mon Oct 19 22:11:31 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.918000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.908000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.937000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.935000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.937000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.939000 GFLOPS
+
+Pass 8 was succesfully completed.
+
+Pass 9 started.
+Mon Oct 19 23:08:45 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.922000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.914000 GFLOPS
+
+Pass 9 was succesfully completed.
+
+Pass 10 started.
+Tue Oct 20 00:05:50 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.917000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.933000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.940000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+Pass 10 was succesfully completed.
+
+Pass 11 started.
+Tue Oct 20 01:02:50 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.909000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.934000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.932000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+Pass 11 was succesfully completed.
+
+Pass 12 started.
+Tue Oct 20 01:59:56 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.905000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.922000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.908000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.903000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.935000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+Pass 12 was succesfully completed.
+
+Pass 13 started.
+Tue Oct 20 02:57:00 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.904000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.923000 GFLOPS
+
+Pass 13 was succesfully completed.
+
+Pass 14 started.
+Tue Oct 20 03:54:05 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.908000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.922000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.938000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.909000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+Pass 14 was succesfully completed.
+
+Pass 15 started.
+Tue Oct 20 04:51:19 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.936000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.934000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.933000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+Pass 15 was succesfully completed.
+
+Pass 16 started.
+Tue Oct 20 05:48:40 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.909000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.925000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.911000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.938000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.925000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.917000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+Pass 16 was succesfully completed.
+
+Pass 17 started.
+Tue Oct 20 06:45:47 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.922000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.923000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.923000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.922000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.905000 GFLOPS
+
+Pass 17 was succesfully completed.
+
+Pass 18 started.
+Tue Oct 20 07:43:50 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.909000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.914000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.934000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.917000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+Pass 18 was succesfully completed.
+
+Pass 19 started.
+Tue Oct 20 08:41:06 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.919000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.914000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.929000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+Pass 19 was succesfully completed.
+
+Pass 20 started.
+Tue Oct 20 09:38:15 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.932000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.933000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.904000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+Pass 20 was succesfully completed.
+
+Pass 21 started.
+Tue Oct 20 10:35:32 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.902000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.934000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.910000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.920000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.918000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.920000 GFLOPS
+
+Pass 21 was succesfully completed.
+
+Pass 22 started.
+Tue Oct 20 11:32:34 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.887000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.929000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.920000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.937000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.935000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.904000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+Pass 22 was succesfully completed.
+
+Pass 23 started.
+Tue Oct 20 12:29:48 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.933000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.904000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.899000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.918000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.929000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.942000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+Pass 23 was succesfully completed.
+
+Pass 24 started.
+Tue Oct 20 13:26:46 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.925000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.938000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.902000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.920000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.903000 GFLOPS
+
+Pass 24 was succesfully completed.
+
+Pass 25 started.
+Tue Oct 20 14:24:05 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.903000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+Pass 25 was succesfully completed.
+
+Pass 26 started.
+Tue Oct 20 15:21:17 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.935000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.919000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.929000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.920000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.905000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.918000 GFLOPS
+
+Pass 26 was succesfully completed.
+
+Pass 27 started.
+Tue Oct 20 16:18:32 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.918000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.908000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.910000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.901000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+Pass 27 was succesfully completed.
+
+Pass 28 started.
+Tue Oct 20 17:15:49 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.891000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.920000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.918000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.929000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.934000 GFLOPS
+
+Pass 28 was succesfully completed.
+
+Pass 29 started.
+Tue Oct 20 18:12:54 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.938000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.932000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.917000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.917000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.919000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.908000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.936000 GFLOPS
+
+Pass 29 was succesfully completed.
+
+Pass 30 started.
+Tue Oct 20 19:09:49 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.919000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.933000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.908000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.941000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.908000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+Pass 30 was succesfully completed.
+
+Pass 31 started.
+Tue Oct 20 20:06:49 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.938000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.923000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.922000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.903000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.918000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.911000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.914000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+Pass 31 was succesfully completed.
+
+Pass 32 started.
+Tue Oct 20 21:03:49 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.932000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.923000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.936000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.901000 GFLOPS
+
+Pass 32 was succesfully completed.
+
+Pass 33 started.
+Tue Oct 20 22:01:00 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.935000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.902000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.897000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.911000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.922000 GFLOPS
+
+Pass 33 was succesfully completed.
+
+Pass 34 started.
+Tue Oct 20 22:58:01 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.929000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.920000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.902000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+Pass 34 was succesfully completed.
+
+Pass 35 started.
+Tue Oct 20 23:55:05 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.932000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.917000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.919000 GFLOPS
+
+Pass 35 was succesfully completed.
+
+Pass 36 started.
+Wed Oct 21 00:52:13 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.936000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.906000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.935000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.922000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.925000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.918000 GFLOPS
+
+Pass 36 was succesfully completed.
+
+Pass 37 started.
+Wed Oct 21 01:49:23 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.933000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.904000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.914000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+Pass 37 was succesfully completed.
+
+Pass 38 started.
+Wed Oct 21 02:46:40 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.939000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.920000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.903000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.919000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.919000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.936000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.921000 GFLOPS
+
+Pass 38 was succesfully completed.
+
+Pass 39 started.
+Wed Oct 21 03:43:41 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.936000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.911000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.931000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.907000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.908000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.910000 GFLOPS
+
+Pass 39 was succesfully completed.
+
+Pass 40 started.
+Wed Oct 21 04:40:50 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.936000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.903000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.908000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.930000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.919000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.912000 GFLOPS
+
+Pass 40 was succesfully completed.
+
+Pass 41 started.
+Wed Oct 21 05:38:47 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.909000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.924000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.906000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.914000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.928000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.915000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.923000 GFLOPS
+
+Pass 41 was succesfully completed.
+
+Pass 42 started.
+Wed Oct 21 06:35:50 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.914000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.929000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.911000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.934000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.911000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.914000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.906000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.929000 GFLOPS
+
+Pass 42 was succesfully completed.
+
+Pass 43 started.
+Wed Oct 21 07:33:00 JST 2009
+
+  Result of the test on process 0 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.926000 GFLOPS
+
+  Result of the test on process 1 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.927000 GFLOPS
+
+  Result of the test on process 2 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.906000 GFLOPS
+
+  Result of the test on process 3 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.932000 GFLOPS
+
+  Result of the test on process 4 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+  Result of the test on process 5 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.914000 GFLOPS
+
+  Result of the test on process 6 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.916000 GFLOPS
+
+  Result of the test on process 7 is as follows.
+    Test completed and passed residual checks.
+    Performance = 5.913000 GFLOPS
+
+Pass 43 was succesfully completed.
+
+Pass 44 started.
+Wed Oct 21 08:30:05 JST 2009

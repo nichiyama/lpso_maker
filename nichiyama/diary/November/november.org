@@ -1,0 +1,38 @@
+#+TITLE:     november 進行状況
+#+AUTHOR:    Nichiyama
+#+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
+#+DATE:      2018-10-11
+#+LANGUAGE:  en
+#+OPTIONS: ^:{}  H:4 num:nil toc:2
+
+#+SETUPFILE: /Users/nitch65/org-html-themes/setup/theme-readtheorg-local-daddygongon.setup
+
+#+begin_html
+<div class="right">
+  <a href="https://github.com/fniessen/org-html-themes/blob/master/demo/example.org" class="fa fa-github"> Edit on GitHub</a>
+</div>
+#+end_html
+
+
+* 目的
+
+- 栃木さんの作ったモデル確認，そして計算を行っていく．
+- VESTAの使い方を栃木さんに教えてもらう．
+- 以上を学んだ上で実際に第２近接位置に溶質原子をあてはめて，自分でモデルを作成する．
+
+* 栃木さんからの引き継ぎ
+
+- 栃木さんの使ってたパソコンの中に，過去作成されたファイルを自分のパソコンへ移行した．このパソコンは液晶が死んでいた．．．
+- 第1近接位置と第３近接位置のモデルをもらった．これをVESTAの勉強として実際にいろいろ変更してみよう．
+- VESTAのマニュアルというものがない（多分）ので今回自分でVESTAをさわりながら自分への理解を深めるためにもマニュアル作りを行おうと思う．
+- これらがサンプルにつながる業務になる．
+
+** 10/29
+- tochisotu（第一近接） とtochisoti2（第３近接）で1-10layerまで存在している．
+- tochisotuの方からモデルを確認．ちゃんと正しい近接位置に置いてあるか確認して計算を投げる．
+- 奇数層，偶数そうの確認をしっかりと．
+
+* ペアについてのお勉強，課題
+- 清原さん，久保さんの卒論にペアの計算について結構詳しく乗っているので，一度全部読んで理解を深める．（2週間）
+- 2週間読んで理解して，少しでも触って理解する
+- 実際に，まだ理解していない部分が山ほど，というかしてないところが大部分なので，勉強しながら論文の理解できなかったところを並行してリストアップしていく．
